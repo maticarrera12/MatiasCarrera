@@ -11,7 +11,7 @@ import mysqlLogo from "../assets/images/mysql.png";
 import pythonLogo from "../assets/images/python.png";
 import springbootLogo from "../assets/images/springboot.png";
 import tailwindLogo from "../assets/images/tailwind.png";
-// import ssnetflix from "../assets/images/ssnetflix.png";
+import ssfilmtrailers from "../assets/images/ssfilmtrailers.png";
 import ssmedreserva from "../assets/images/ssmedreserva.png";
 
 export const technologies = [
@@ -90,7 +90,7 @@ export const projects = [
       "Una moderna página MERN de turnos. Cuenta con cuenta para pacientes, médicos y administrador. Integrado a MercadoPago",
     projectLink: "https://example.com/e-commerce",
     codeLink: "https://github.com/tuusuario/e-commerce",
-    technologies: ["ReactJS", "Node.js", "MongoDB", "TailwindCSS", "HTML", "CSS", "Git", "Figma", "JavaScript"],
+    technologies: ["ReactJS", "Node.js", "MongoDB", "TailwindCSS", "HTML", "CSS", "JavaScript"],
   },
   {
     title: "Carrito de Compras",
@@ -99,6 +99,16 @@ export const projects = [
       "Un carrito de compras realizado con ReactJS, Bootstrap 5 y MaterialUI",
     projectLink: "https://carritocompras.matiascarreadev.com/",
     codeLink: "https://github.com/maticarrera12/CarritoComprasReactJS",
-    technologies: ["ReactJS", "HTML", "CSS", "Git", "Figma", "JavaScript"],
+    technologies: ["ReactJS", "HTML", "CSS", "JavaScript"],
+  },
+  {
+    title: "FilmTrailers",
+    image: ssfilmtrailers,
+    description:
+    "Clon de una plataforma de series y peliculas muy famosa",
+    projectLink: "https://film-trailers.vercel.app/",
+    codeLink: "https://github.com/maticarrera12/FilmTrailers",
+    technologies: ["ReactJS", "HTML", "CSS","TailwindCSS", "JavaScript"],
   },
 ]
+
