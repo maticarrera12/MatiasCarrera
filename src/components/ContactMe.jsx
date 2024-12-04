@@ -44,7 +44,7 @@ const ContactMe = () => {
         onSubmit={handleSubmit}
         className="w-full max-w-lg bg-white rounded-lg shadow-lg p-6"
       >
-        <h2 className="font-zentry text-3xl font-bold text-center mb-6">Contactame</h2>
+        <h2 className="font-zentry text-3xl font-bold text-[#1E1E1E] text-center mb-6">Contactame</h2>
 
         {isSent && (
           <p className="text-green-600 text-center mb-4 font-circular-web">
@@ -57,7 +57,7 @@ const ContactMe = () => {
         )}
 
         <div className="mb-4">
-          <label htmlFor="name" className="font-circular-web block text-gray-700 font-bold mb-2">
+          <label htmlFor="name" className="font-circular-web block text-[#1E1E1E] font-bold mb-2">
             Nombre:
           </label>
           <input
@@ -72,7 +72,7 @@ const ContactMe = () => {
         </div>
 
         <div className="mb-4">
-          <label htmlFor="email" className="font-circular-web block text-gray-700 font-bold mb-2">
+          <label htmlFor="email" className="font-circular-web block text-[#1E1E1E] font-bold mb-2">
             Correo Electrónico:
           </label>
           <input
@@ -87,7 +87,7 @@ const ContactMe = () => {
         </div>
 
         <div className="mb-4">
-          <label htmlFor="message" className="font-circular-web block text-gray-700 font-bold mb-2">
+          <label htmlFor="message" className="font-circular-web block text-[#1E1E1E] font-bold mb-2">
             Mensaje:
           </label>
           <textarea

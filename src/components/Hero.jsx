@@ -33,7 +33,8 @@ const Hero = () => {
         style={{
           backgroundImage: "url(/img/backgroundverde.jpg)", // Ruta a la imagen de fondo
           backgroundSize: "cover",                 // Asegura que la imagen cubra todo el div
-          backgroundPosition: "center",            // Centra la imagen          // Fija la imagen de fondo al hacer scroll (opcional)
+          backgroundPosition: "center",
+          filter: "brightness(0.9)"         // Centra la imagen          // Fija la imagen de fondo al hacer scroll (opcional)
         }}
       >
         <div>
@@ -52,7 +53,7 @@ const Hero = () => {
               soluciones innovadoras y centradas en el usuario.
             </p>
             <a href="#contacto" className="cursor-pointer">
-              <button className="group relative overflow-hidden w-fit rounded-full px-7 py-3 bg-gradient-to-r from-[#65FCF6] to-[#01E363] text-gray-800 flex-center gap-1">
+              <button className="group relative overflow-hidden w-fit rounded-full px-7 py-3 bg-gradient-to-r from-[#01E363] to-[#65FCF6] text-gray-800 flex-center gap-1">
                 <TiLocationArrow /> {/* Ícono izquierdo */}
                 <span className="relative z-50 inline-flex overflow-hidden font-general text-xs uppercase">
                   Contactame
@@ -70,7 +71,7 @@ const Hero = () => {
           <div className="mt-24 px-5 sm:px-10"></div>
         </div>
       </div>
-      <h2 className="special-font hero-heading absolute bottom-5 right-5 bg-gradient-to-r from-[#65FCF6] to-[#01E363] text-transparent bg-clip-text">
+      <h2 className="special-font hero-heading absolute bottom-5 right-5 bg-gradient-to-r from-[#01E363] to-[#65FCF6] text-transparent bg-clip-text">
   <b>u</b>x/<b>u</b>i
 </h2>
 
