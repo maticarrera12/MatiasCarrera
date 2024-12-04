@@ -31,7 +31,7 @@ const Hero = () => {
         id="hero-frame"
         className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg"
         style={{
-          backgroundImage: "url(/img/background.jpg)", // Ruta a la imagen de fondo
+          backgroundImage: "url(/img/backgroundverde.jpg)", // Ruta a la imagen de fondo
           backgroundSize: "cover",                 // Asegura que la imagen cubra todo el div
           backgroundPosition: "center",            // Centra la imagen          // Fija la imagen de fondo al hacer scroll (opcional)
         }}
