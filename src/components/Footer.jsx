@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-gray-950 p-4">
+    <div className="bg-[#503D42] p-4">
       <div className="text-center mb-2">
         <p className="text-xs font-circular-web text-soft-white">
           &copy; 2024 Matías Carrera.

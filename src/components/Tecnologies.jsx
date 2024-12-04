@@ -5,7 +5,7 @@ import {technologies} from "../assets/assets.js";
 // eslint-disable-next-line react/prop-types
 const BentoCard = ({ image, title }) => {
   return (
-    <div className="relative w-40 h-64 bg-dark-gray rounded-lg border-[0.5px] border-soft-white">
+    <div className="relative w-40 h-64 rounded-lg border-[0.5px] border-soft-white">
       {/* Contenedor de la imagen */}
       <div className="w-full h-3/4 flex justify-center items-center overflow-hidden">
         <img
@@ -16,7 +16,7 @@ const BentoCard = ({ image, title }) => {
       </div>
 
       {/* Contenedor del texto */}
-      <div className="relative z-10 flex flex-col justify-center items-center py-3 bg-opacity-50 bg-dark-gray rounded-b-lg">
+      <div className="relative z-10 flex flex-col justify-center items-center py-3 bg-opacity-50 rounded-b-lg">
         <h1 className="text-xs font-roboto font-medium text-center text-blue-50">
           {title}
         </h1>
@@ -40,7 +40,7 @@ const Tecnologies = () => {
   };
 
   return (
-    <div id="tecnologias" className="min-h-screen w-screen bg-dark-gray flex flex-col items-center justify-center">
+    <div id="tecnologias" className="min-h-screen w-screen bg-[#503D42] flex flex-col items-center justify-center">
       {/* Título de la sección */}
       <AnimatedTitle
         title="Tecnologías"

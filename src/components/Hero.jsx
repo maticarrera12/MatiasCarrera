@@ -44,7 +44,7 @@ const Hero = () => {
             <h1 className="special-font hero-heading text-soft-white">
               re<b>a</b>ctjs
             </h1>
-            <p className="mb-5 max-w-80 font-robert-regular text-soft-white">
+            <p className="mb-5 max-w-80  font-robert-regular text-soft-white">
               Hola, soy Matías Carrera, estudiante de Ingeniería Informática en
               la UBA, con 3 años de formación en Diseño Gráfico y Multimedia en
               la UADE. Apasionado por la programación y el diseño UX/UI, busco
@@ -52,7 +52,7 @@ const Hero = () => {
               soluciones innovadoras y centradas en el usuario.
             </p>
             <a href="#contacto" className="cursor-pointer">
-              <button className="group relative overflow-hidden w-fit rounded-full px-7 py-3 bg-lime-green text-gray-800 flex-center gap-1">
+              <button className="group relative overflow-hidden w-fit rounded-full px-7 py-3 bg-gradient-to-r from-[#65FCF6] to-[#01E363] text-gray-800 flex-center gap-1">
                 <TiLocationArrow /> {/* Ícono izquierdo */}
                 <span className="relative z-50 inline-flex overflow-hidden font-general text-xs uppercase">
                   Contactame
@@ -70,9 +70,10 @@ const Hero = () => {
           <div className="mt-24 px-5 sm:px-10"></div>
         </div>
       </div>
-      <h2 className="special-font hero-heading absolute bottom-5 right-5 text-lime-green">
-        <b>u</b>x/<b>u</b>i
-      </h2>
+      <h2 className="special-font hero-heading absolute bottom-5 right-5 bg-gradient-to-r from-[#65FCF6] to-[#01E363] text-transparent bg-clip-text">
+  <b>u</b>x/<b>u</b>i
+</h2>
+
     </div>
   );
 };

@@ -11,11 +11,9 @@ export default {
         "robert-regular": ["robert-regular", "sans-serif"],
       },
       colors: {
-        'lime-green': '#00FF00',
         'soft-white': '#F5FBEF',
         'dark-purple': '#2E1760',
         'vibrant-blue': '#3423A6',
-        'peach': '#FB9F89',
         'dark-gray': '#333333'
       },
     },

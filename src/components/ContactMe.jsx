@@ -39,7 +39,7 @@ const ContactMe = () => {
   };
 
   return (
-    <div id="contacto" className="min-h-[800px] bg-dark-purple p-8 flex justify-center items-center">
+    <div id="contacto" className="min-h-[800px] bg-[#5438DC] p-8 flex justify-center items-center">
       <form
         onSubmit={handleSubmit}
         className="w-full max-w-lg bg-white rounded-lg shadow-lg p-6"
@@ -103,7 +103,7 @@ const ContactMe = () => {
 
         <button
           type="submit"
-          className="font-circular-web w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-200"
+          className="font-circular-web w-full bg-[#5438DC] text-soft-white py-2 px-4 rounded-lg hover:opacity-80 transition duration-200"
         >
           Enviar Mensaje
         </button>

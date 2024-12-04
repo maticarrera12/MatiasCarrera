@@ -51,7 +51,7 @@ html {
   }
 
   .floating-nav {
-    @apply bg-dark-purple rounded-lg border;
+    @apply bg-[#1D1D1Ds] rounded-lg border;
   }
 
   .absolute-center {

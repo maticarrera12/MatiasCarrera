@@ -61,7 +61,7 @@ const Projects = () => {
     : projects;
 
   return (
-    <div className="min-h-screen bg-dark-purple p-12" id="proyectos">
+    <div className="min-h-screen bg-[#5438DC] p-12" id="proyectos">
       <h2 className="text-4xl text-center font-general font-semibold text-soft-white mb-12">
         Mis Proyectos
       </h2>
@@ -71,8 +71,8 @@ const Projects = () => {
           <button
             key={index}
             className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium ${
-              selectedTech === tech.name ? "bg-blue-600 text-white" : "bg-soft-white text-gray-900"
-            } hover:bg-blue-500 transition`}
+              selectedTech === tech.name ? "bg-gradient-to-r from-[#65FCF6] to-[#01E363]  text-gray-900": "bg-soft-white"
+            } hover:bg-gradient-to-r from-[#65FCF6] to-[#01E363] transition`}
             onClick={() => setSelectedTech(selectedTech === tech.name ? null : tech.name)} // Toggle selección
           >
             <img src={tech.image} alt={tech.name} className="w-6 h-6" />
