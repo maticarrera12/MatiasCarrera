@@ -13,6 +13,7 @@ import springbootLogo from "../assets/images/springboot.png";
 import tailwindLogo from "../assets/images/tailwind.png";
 import ssfilmtrailers from "../assets/images/ssfilmtrailers.png";
 import ssmedreserva from "../assets/images/ssmedreserva.png";
+import expressjsLogo from "../assets/images/expressjs.png"
 
 export const technologies = [
   {
@@ -71,6 +72,11 @@ export const technologies = [
     category: "back-end",
   },
   {
+    name: "Express.js",
+    image: expressjsLogo,
+    category: "back-end",
+  },
+  {
     name: "Git",
     image: githubLogo,
     category: "Herramientas",
@@ -88,9 +94,9 @@ export const projects = [
     image: ssmedreserva,
     description:
       "Una moderna página MERN de turnos. Cuenta con cuenta para pacientes, médicos y administrador. Integrado a MercadoPago",
-    projectLink: "https://example.com/e-commerce",
-    codeLink: "https://github.com/tuusuario/e-commerce",
-    technologies: ["ReactJS", "Node.js", "MongoDB", "TailwindCSS", "HTML", "CSS", "JavaScript"],
+    projectLink: "https://med-reserva.vercel.app/",
+    codeLink: "https://github.com/maticarrera12/MedReserva",
+    technologies: ["ReactJS", "Node.js", "MongoDB", "TailwindCSS", "HTML", "CSS", "JavaScript" ,"Express.js"],
   },
   {
     title: "Carrito de Compras",
