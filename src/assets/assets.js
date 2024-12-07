@@ -14,6 +14,7 @@ import tailwindLogo from "../assets/images/tailwind.png";
 import ssfilmtrailers from "../assets/images/ssfilmtrailers.png";
 import ssmedreserva from "../assets/images/ssmedreserva.png";
 import expressjsLogo from "../assets/images/expressjs.png"
+import awsLogo from "../assets/images/aws.png"
 
 export const technologies = [
   {
@@ -74,6 +75,11 @@ export const technologies = [
   {
     name: "Express.js",
     image: expressjsLogo,
+    category: "back-end",
+  },
+  {
+    name: "AWS",
+    image: awsLogo,
     category: "back-end",
   },
   {
