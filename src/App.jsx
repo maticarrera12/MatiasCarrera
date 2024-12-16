@@ -4,6 +4,7 @@ import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 import Navbar from "./components/NavBar"
 import Projects from "./components/Projects"
+import Studies from "./components/Studies"
 
 import Tecnologies from "./components/Tecnologies"
 
@@ -17,6 +18,7 @@ const App = () => {
       <Hero/>
       <Projects/>
      <Tecnologies/> 
+     <Studies/>
      <ContactMe/>
      <Footer/>
     </main>

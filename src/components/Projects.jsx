@@ -72,7 +72,7 @@ const Projects = () => {
             key={index}
             className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium ${
               selectedTech === tech.name ? "bg-gradient-to-r from-[#01E363] to-[#65FCF6]  text-soft-white": "bg-soft-white text-[#1E1E1E]"
-            } hover:bg-gradient-to-r from-[#01E363] to-[#65FCF6] transition`}
+            } hover:bg-gradient-to-r from-[#01E363] to-[#65FCF6]`}
             onClick={() => setSelectedTech(selectedTech === tech.name ? null : tech.name)} // Toggle selección
           >
             <img src={tech.image} alt={tech.name} className="w-6 h-6" />
