@@ -15,7 +15,7 @@ import ssfilmtrailers from "../assets/images/ssfilmtrailers.png";
 import ssmedreserva from "../assets/images/ssmedreserva.png";
 import expressjsLogo from "../assets/images/expressjs.png"
 import awsLogo from "../assets/images/aws.png"
-import ssawwwardwinner from "../assets/images/ssawwwardwinner.pg"
+import ssawwwardwinner from "../assets/images/ssawwwardwinner.png"
 export const technologies = [
   {
     name: "HTML",
