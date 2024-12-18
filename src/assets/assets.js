@@ -15,7 +15,7 @@ import ssfilmtrailers from "../assets/images/ssfilmtrailers.png";
 import ssmedreserva from "../assets/images/ssmedreserva.png";
 import expressjsLogo from "../assets/images/expressjs.png"
 import awsLogo from "../assets/images/aws.png"
-
+import ssawwwardwinner from "../assets/images/ssawwwardwinner.pg"
 export const technologies = [
   {
     name: "HTML",
@@ -104,15 +104,15 @@ export const projects = [
     codeLink: "https://github.com/maticarrera12/MedReserva",
     technologies: ["ReactJS", "Node.js", "MongoDB", "TailwindCSS", "HTML", "CSS", "JavaScript" ,"Express.js"],
   },
-  {
-    title: "Carrito de Compras",
-    image: ssmedreserva,
-    description:
-      "Un carrito de compras realizado con ReactJS, Bootstrap 5 y MaterialUI",
-    projectLink: "https://carritocompras.matiascarreadev.com/",
-    codeLink: "https://github.com/maticarrera12/CarritoComprasReactJS",
-    technologies: ["ReactJS", "HTML", "CSS", "JavaScript"],
-  },
+  // {
+  //   title: "Carrito de Compras",
+  //   image: ssmedreserva,
+  //   description:
+  //     "Un carrito de compras realizado con ReactJS, Bootstrap 5 y MaterialUI",
+  //   projectLink: "https://carritocompras.matiascarreadev.com/",
+  //   codeLink: "https://github.com/maticarrera12/CarritoComprasReactJS",
+  //   technologies: ["ReactJS", "HTML", "CSS", "JavaScript"],
+  // },
   {
     title: "FilmTrailers",
     image: ssfilmtrailers,
@@ -120,6 +120,15 @@ export const projects = [
     "Clon de una plataforma de series y peliculas muy famosa",
     projectLink: "https://film-trailers.vercel.app/",
     codeLink: "https://github.com/maticarrera12/FilmTrailers",
+    technologies: ["ReactJS", "HTML", "CSS","TailwindCSS", "JavaScript"],
+  },
+  {
+    title: "Awwward-winner",
+    image: ssawwwardwinner,
+    description:
+    "Clon de una pagina awwward-winner",
+    projectLink: "https://awwwards-winner.vercel.app/",
+    codeLink: "https://github.com/maticarrera12/awwwards-winner",
     technologies: ["ReactJS", "HTML", "CSS","TailwindCSS", "JavaScript"],
   },
 ]
