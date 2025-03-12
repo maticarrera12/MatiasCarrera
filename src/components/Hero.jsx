@@ -40,7 +40,7 @@ const Hero = () => {
         <div>
           <div className="mt-24 px-5 sm:px-10">
             <p className="mb-5 max-w-64 font-robert-regular text-soft-white text-2xl">
-              Desarrollador Web <br /> Full-Stack
+              Front-End <br /> Developer
             </p>
             <h1 className="special-font hero-heading text-soft-white">
               re<b>a</b>ctjs

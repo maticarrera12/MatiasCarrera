@@ -77,11 +77,11 @@ export const technologies = [
     image: expressjsLogo,
     category: "back-end",
   },
-  {
-    name: "AWS",
-    image: awsLogo,
-    category: "back-end",
-  },
+  // {
+  //   name: "AWS",
+  //   image: awsLogo,
+  //   category: "back-end",
+  // },
   {
     name: "Git",
     image: githubLogo,
