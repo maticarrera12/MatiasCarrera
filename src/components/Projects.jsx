@@ -6,7 +6,7 @@ const ProjectCard = ({ title, image, description, projectLink, codeLink, technol
   return (
     <div className="max-w-xl w-full bg-white rounded-lg shadow-lg hover:shadow-2xl transform transition-all duration-300 ease-in-out hover:scale-105 overflow-hidden p-6 mb-8 flex flex-col">
       {/* Imagen del proyecto */}
-      <div className="relative w-full h-40 mb-6">
+      <div className="relative w-full h-96 mb-6">
         <img
           src={image}
           alt={`Imagen del proyecto ${title}`}
@@ -23,14 +23,19 @@ const ProjectCard = ({ title, image, description, projectLink, codeLink, technol
         <p className="text-sm text-gray-600 mt-4 flex-grow">{description}</p>
         {/* Tecnologías */}
         <p className="text-sm text-gray-500 mt-2">Tecnologías: {technologies.join(", ")}</p>
+
         {/* Contenedor de los botones */}
         <div className="flex gap-6 mt-6 justify-start">
-          {/* Botón para ver el proyecto */}
+          {/* Botón para ver el proyecto (deshabilitado si no hay link) */}
           <a
-            href={projectLink}
+            href={projectLink || "#"}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center text-sm font-medium text-blue-600 hover:text-blue-500 transition duration-200"
+            className={`flex items-center text-sm font-medium transition duration-200 ${
+              projectLink
+                ? "text-blue-600 hover:text-blue-500"
+                : "text-gray-400 cursor-not-allowed pointer-events-none"
+            }`}
           >
             <FaLink className="mr-2" size={18} />
             Ver Proyecto

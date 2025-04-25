@@ -40,10 +40,12 @@ const Hero = () => {
         <div>
           <div className="mt-24 px-5 sm:px-10">
             <p className="mb-5 max-w-64 font-robert-regular text-soft-white text-2xl">
-              Front-End <br /> Developer
+              Full-Stack <br /> Developer
             </p>
             <h1 className="special-font hero-heading text-soft-white">
-              re<b>a</b>ctjs
+              rectjs <br />
+              J<b>a</b>va <br />
+              Spring Boot
             </h1>
             <p className="mb-5 max-w-80  font-robert-regular text-soft-white">
               Hola, soy Matías Carrera, estudiante de Ingeniería Informática en

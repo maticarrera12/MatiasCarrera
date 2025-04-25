@@ -14,8 +14,9 @@ import tailwindLogo from "../assets/images/tailwind.png";
 import ssfilmtrailers from "../assets/images/ssfilmtrailers.png";
 import ssmedreserva from "../assets/images/ssmedreserva.png";
 import expressjsLogo from "../assets/images/expressjs.png"
-import awsLogo from "../assets/images/aws.png"
 import ssawwwardwinner from "../assets/images/ssawwwardwinner.png"
+import ssquetedebo from "../assets/images/quetedebo.png"
+import ssvelyo from "../assets/images/ssvelyo.png"
 export const technologies = [
   {
     name: "HTML",
@@ -96,13 +97,29 @@ export const technologies = [
 
 export const projects = [
   {
+    title: "Velyo (En proceso)",
+    image: ssvelyo,
+    description:
+      "Velyo es una aplicación web de reservas de alojamientos desarrollada como proyecto fullstack. Permite a los usuarios explorar, buscar y reservar distintos tipos de alojamientos, como habitaciones y casas completas. La aplicación incluye funcionalidades como filtrado por características, carga de imágenes, gestión de reservas y panel de administración. El frontend está desarrollado con ReactJS, utilizando librerías como Ant Design, Formik y Yup para la construcción de formularios y validaciones. El backend está construido con Java Spring Boot, siguiendo una arquitectura basada en controladores, servicios y repositorios.La persistencia de datos se realiza mediante una base de datos MySQL.",
+    codeLink: "https://github.com/maticarrera12/velyo-professional-developer",
+    technologies: ["ReactJS", "HTML", "CSS", "JavaScript" , "Java", "SpringBoot", "MYSQL",],
+  },
+  {
     title: "MedReserva",
     image: ssmedreserva,
     description:
-      "Una moderna página MERN de turnos. Cuenta con cuenta para pacientes, médicos y administrador. Integrado a MercadoPago",
+      "MedReserva es una aplicación web desarrollada con el stack MERN (MongoDB, Express.js, ReactJS y Node.js) para la gestión de turnos médicos. Permite a pacientes reservar turnos, a médicos administrar su disponibilidad y a administradores gestionar usuarios y especialidades. La app incluye autenticación por roles y está integrada con Mercado Pago para la gestión de pagos. El diseño está construido con TailwindCSS, y se utilizan librerías como React Router y Axios para la navegación y consumo de APIs.",
     projectLink: "https://med-reserva.vercel.app/",
     codeLink: "https://github.com/maticarrera12/MedReserva",
     technologies: ["ReactJS", "Node.js", "MongoDB", "TailwindCSS", "HTML", "CSS", "JavaScript" ,"Express.js"],
+  },
+  {
+    title: "QueTeDebo?",
+    image: ssquetedebo,
+    description: "¿Saliste con amigos y uno terminó pagando todo? Con esta app no hace falta hacer cuentas raras ni pelearse con la calculadora. Cargás quién pagó qué y te dice al toque cuánto tiene que poner cada uno para que todos queden a mano. ¡Ideal para cenas, birras o viajes!",
+    projectLink: "https://maticarrera12.github.io/quetedebo",
+    codeLink: "https://github.com/maticarrera12/quetedebo",
+    technologies: ["ReactJS", "HTML", "CSS", "JavaScript"]
   },
   // {
   //   title: "Carrito de Compras",
@@ -117,7 +134,7 @@ export const projects = [
     title: "FilmTrailers",
     image: ssfilmtrailers,
     description:
-    "Clon de una plataforma de series y peliculas muy famosa",
+    "Clon de una plataforma de series y peliculas muy famosa.",
     projectLink: "https://film-trailers.vercel.app/",
     codeLink: "https://github.com/maticarrera12/FilmTrailers",
     technologies: ["ReactJS", "HTML", "CSS","TailwindCSS", "JavaScript"],
@@ -126,7 +143,7 @@ export const projects = [
     title: "Awwward-winner",
     image: ssawwwardwinner,
     description:
-    "Clon de una pagina awwward-winner",
+    "Clon de una pagina awwward-winner.",
     projectLink: "https://awwwards-winner.vercel.app/",
     codeLink: "https://github.com/maticarrera12/awwwards-winner",
     technologies: ["ReactJS", "HTML", "CSS","TailwindCSS", "JavaScript"],

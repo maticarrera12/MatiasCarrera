@@ -80,11 +80,11 @@ const Studies = () => {
             },
             {
               title: "Desarrollador FrontEnd ReactJS - CoderHouse",
-              date: "2023",
+              date: "2024",
             },
             {
               title: "Diseño UX/UI - CoderHouse",
-              date: "2023",
+              date: "2024",
             },
           ].map((item, index) => (
             <li key={index}>
