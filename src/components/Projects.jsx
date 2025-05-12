@@ -4,7 +4,7 @@ import { projects, technologies } from "../assets/assets";
 
 const ProjectCard = ({ title, image, description, projectLink, codeLink, technologies }) => {
   return (
-    <div className="max-w-xl w-full bg-white rounded-lg shadow-lg hover:shadow-2xl transform transition-all duration-300 ease-in-out hover:scale-105 overflow-hidden p-6 mb-8 flex flex-col">
+    <div className="w-full min-w-[300px] mx-auto bg-white rounded-lg shadow-lg hover:shadow-2xl transform transition-all duration-300 ease-in-out hover:scale-105 overflow-hidden p-6 mb-8 flex flex-col">
       {/* Imagen del proyecto */}
       <div className="relative w-full h-96 mb-6">
         <img
@@ -15,18 +15,12 @@ const ProjectCard = ({ title, image, description, projectLink, codeLink, technol
       </div>
 
       <div className="flex flex-col flex-grow">
-        {/* Título del proyecto */}
         <h3 className="text-2xl font-semibold text-gray-900 hover:text-blue-600 transition-colors duration-200">
           {title}
         </h3>
-        {/* Descripción */}
         <p className="text-sm text-gray-600 mt-4 flex-grow">{description}</p>
-        {/* Tecnologías */}
         <p className="text-sm text-gray-500 mt-2">Tecnologías: {technologies.join(", ")}</p>
-
-        {/* Contenedor de los botones */}
         <div className="flex gap-6 mt-6 justify-start">
-          {/* Botón para ver el proyecto (deshabilitado si no hay link) */}
           <a
             href={projectLink || "#"}
             target="_blank"
@@ -66,12 +60,12 @@ const Projects = () => {
     : projects;
 
   return (
-    <div className="min-h-screen bg-[#5438DC] p-12" id="proyectos">
-      <h2 className="text-4xl text-center font-general font-semibold text-soft-white mb-12">
+    <div className="min-h-screen bg-[#5438DC] p-4 sm:p-8 md:p-12" id="proyectos">
+      <h2 className="text-3xl sm:text-4xl text-center font-general font-semibold text-soft-white mb-8 sm:mb-12">
         Mis Proyectos
       </h2>
       {/* Botones de tecnología */}
-      <div className="flex flex-wrap justify-center gap-4 mb-8 max-w-[900px] mx-auto">
+      <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-6 sm:mb-8 max-w-[900px] mx-auto px-4">
         {technologies.map((tech, index) => (
           <button
             key={index}
@@ -87,7 +81,7 @@ const Projects = () => {
       </div>
 
       {/* Contenedor de proyectos */}
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 !justify-around">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center px-4 sm:px-0">
         {filteredProjects.length > 0 ? (
           filteredProjects.map((project, index) => (
             <ProjectCard

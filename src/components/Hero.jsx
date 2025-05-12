@@ -48,8 +48,8 @@ const Hero = () => {
               Spring Boot
             </h1>
             <p className="mb-5 max-w-80  font-robert-regular text-soft-white">
-              Hola, soy Matías Carrera, estudiante de Ingeniería Informática en
-              la UBA, con 3 años de formación en Diseño Gráfico y Multimedia en
+              Hola, soy Matías Carrera, estudiante de Ingeniería en Inteligencia Artificial en
+              la Universidad de Palermo, con 3 años de formación en Diseño Gráfico y Multimedia en
               la UADE. Apasionado por la programación y el diseño UX/UI, busco
               combinar mi creatividad y habilidades técnicas para crear
               soluciones innovadoras y centradas en el usuario.

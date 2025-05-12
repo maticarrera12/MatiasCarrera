@@ -97,7 +97,7 @@ export const technologies = [
 
 export const projects = [
   {
-    title: "Velyo (En proceso)",
+    title: "Velyo",
     image: ssvelyo,
     description:
       "Velyo es una aplicación web de reservas de alojamientos desarrollada como proyecto fullstack. Permite a los usuarios explorar, buscar y reservar distintos tipos de alojamientos, como habitaciones y casas completas. La aplicación incluye funcionalidades como filtrado por características, carga de imágenes, gestión de reservas y panel de administración. El frontend está desarrollado con ReactJS, utilizando librerías como Ant Design, Formik y Yup para la construcción de formularios y validaciones. El backend está construido con Java Spring Boot, siguiendo una arquitectura basada en controladores, servicios y repositorios.La persistencia de datos se realiza mediante una base de datos MySQL.",
