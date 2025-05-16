@@ -8,7 +8,7 @@ const ButtonBar = () => {
         href="https://github.com/maticarrera12"
         target="_blank"
         rel="noopener noreferrer"
-        className="p-3 sm:p-2 rounded-full bg-orange-600 text-white hover:bg-orange-500 transition duration-200 transform hover:scale-110"
+        className="p-3 sm:p-2 rounded-full bg-flame text-white hover:bg-orange-500 transition duration-200 transform hover:scale-110"
       >
         <FaGithub className="sm:text-lg text-xl" /> {/* Tamaño ajustado */}
       </a>

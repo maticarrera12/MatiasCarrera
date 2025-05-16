@@ -40,7 +40,7 @@ const ProjectCard = ({ title, image, description, projectLink, codeLink, technol
             href={codeLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center text-sm font-medium text-orange-600 hover:text-orange-500 transition duration-200"
+            className="flex items-center text-sm font-medium text-flame hover:text-orange-500 transition duration-200"
           >
             <FaGithub className="mr-2" size={18} />
             Ver Código
@@ -60,7 +60,7 @@ const Projects = () => {
     : projects;
 
   return (
-    <div className="min-h-screen bg-[#5438DC] p-4 sm:p-8 md:p-12" id="proyectos">
+    <div className="min-h-screen bg-gray-900 p-4 sm:p-8 md:p-12" id="proyectos">
       <h2 className="text-3xl sm:text-4xl text-center font-general font-semibold text-soft-white mb-8 sm:mb-12">
         Mis Proyectos
       </h2>
@@ -70,8 +70,8 @@ const Projects = () => {
           <button
             key={index}
             className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium ${
-              selectedTech === tech.name ? "bg-gradient-to-r from-[#01E363] to-[#65FCF6]  text-soft-white": "bg-soft-white text-[#1E1E1E]"
-            } hover:bg-gradient-to-r from-[#01E363] to-[#65FCF6]`}
+              selectedTech === tech.name ? "bg-flame  text-soft-white": "bg-soft-white text-[#1E1E1E]"
+            } hover:bg-flame hover:text-soft-white transition duration-300 ease-in-out`}
             onClick={() => setSelectedTech(selectedTech === tech.name ? null : tech.name)} // Toggle selección
           >
             <img src={tech.image} alt={tech.name} className="w-6 h-6" />

@@ -14,7 +14,8 @@ export default {
         'soft-white': '#F5FBEF',
         'dark-purple': '#2E1760',
         'vibrant-blue': '#3423A6',
-        'dark-gray': '#333333'
+        'dark-gray': '#333333',
+        'flame': '#FF4C00',
       },
     },
   },

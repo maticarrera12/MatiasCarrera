@@ -58,7 +58,7 @@ const Studies = () => {
     const animateTexts = (texts) => {
       texts.forEach((text) => {
         gsap.to(text, {
-          color: "#4f46e5",
+          color: "#ea580c",
           scrollTrigger: {
             trigger: text,
             start: "top center",
@@ -116,7 +116,7 @@ const Studies = () => {
         <div className="absolute top-0 left-4 w-1 h-full bg-gray-300 rounded-full"></div>
         <div
           ref={progressRefStudies}
-          className="absolute top-0 left-4 w-1 bg-indigo-600 rounded-full origin-top"
+          className="absolute top-0 left-4 w-1 bg-flame rounded-full origin-top"
           style={{ height: "0%" }}
         ></div>
 
@@ -150,7 +150,7 @@ const Studies = () => {
         <div className="absolute top-0 left-4 w-1 h-full bg-gray-300 rounded-full"></div>
         <div
           ref={progressRefCourses}
-          className="absolute top-0 left-4 w-1 bg-indigo-600 rounded-full origin-top"
+          className="absolute top-0 left-4 w-1 bg-flame rounded-full origin-top"
           style={{ height: "0%" }}
         ></div>
 

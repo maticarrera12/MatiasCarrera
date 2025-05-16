@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-[#503D42] p-4">
+    <div className="bg-gray-900 p-4">
       <div className="text-center mb-2">
         <p className="text-xs font-circular-web text-soft-white">
           &copy; 2024 Matías Carrera.
@@ -15,7 +15,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           aria-label="Github"
         >
-          <FaGithub className="text-orange-600 text-2xl hover:text-orange-400" />
+          <FaGithub className="text-flame text-2xl hover:text-orange-400" />
         </a>
         <a 
           href="https://www.linkedin.com/in/matias-carrera-761b45328" 

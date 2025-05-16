@@ -7,42 +7,46 @@ import { TiLocationArrow } from "react-icons/ti";
 gsap.registerPlugin(_ScrollTrigger);
 
 const Hero = () => {
-  useGSAP(() => {
-    gsap.set("#hero-frame", {
-      clipPath: "polygon(14% 0%, 72% 0%, 90% 90%, 0% 100%)",
-      borderRadius: "0 0 40% 10%",
-    });
-    gsap.from("#hero-frame", {
-      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-      borderRadius: "0 0 0 0",
-      ease: "power1.inOut",
-      scrollTrigger: {
-        trigger: "#hero-frame",
-        start: "center center",
-        end: "bottom center",
-        scrub: true,
-      },
-    });
+useGSAP(() => {
+  gsap.set("#hero-frame", {
+    clipPath: "polygon(14% 0%, 72% 0%, 90% 90%, 0% 100%)",
+    borderRadius: "0 0 40% 10%",
   });
+
+  gsap.from("#hero-frame", {
+    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+    borderRadius: "0 0 0 0",
+    ease: "power1.inOut",
+    scrollTrigger: {
+      trigger: "#hero-frame",
+      start: "center center",
+      end: "bottom center",
+      scrub: true,
+    },
+  });
+
+  // 👉 Animación de fondo
+  gsap.to("#hero-frame", {
+    backgroundColor: "##FC5A14", 
+    duration: 5,
+    repeat: -1,
+    yoyo: true,
+    ease: "power1.inOut",
+  });
+}, []);
 
   return (
     <div className="relative !h-dvh w-screen overflow-x-hidden" id="inicio">
       <div
         id="hero-frame"
-        className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg"
-        style={{
-          backgroundImage: "url(/img/backgroundverde.jpg)", // Ruta a la imagen de fondo
-          backgroundSize: "cover",                 // Asegura que la imagen cubra todo el div
-          backgroundPosition: "center",
-          filter: "brightness(0.9)"         // Centra la imagen          // Fija la imagen de fondo al hacer scroll (opcional)
-        }}
+        className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-flame"
       >
         <div>
           <div className="mt-24 px-5 sm:px-10">
             <p className="mb-5 max-w-64 font-robert-regular text-soft-white text-2xl">
               Full-Stack <br /> Developer
             </p>
-            <h1 className="special-font hero-heading text-soft-white">
+            <h1 className="special-font mb-5 hero-heading text-black">
               rectjs <br />
               J<b>a</b>va <br />
               Spring Boot
@@ -55,7 +59,7 @@ const Hero = () => {
               soluciones innovadoras y centradas en el usuario.
             </p>
             <a href="#contacto" className="cursor-pointer">
-              <button className="group relative overflow-hidden w-fit rounded-full px-7 py-3 bg-gradient-to-r from-[#01E363] to-[#65FCF6] text-gray-800 flex-center gap-1">
+              <button className="group relative overflow-hidden w-fit rounded-full px-7 py-3 bg-black text-white flex-center gap-1">
                 <TiLocationArrow /> {/* Ícono izquierdo */}
                 <span className="relative z-50 inline-flex overflow-hidden font-general text-xs uppercase">
                   Contactame
@@ -73,7 +77,7 @@ const Hero = () => {
           <div className="mt-24 px-5 sm:px-10"></div>
         </div>
       </div>
-      <h2 className="special-font hero-heading absolute bottom-5 right-5 bg-gradient-to-r from-[#01E363] to-[#65FCF6] text-transparent bg-clip-text">
+      <h2 className="special-font hero-heading absolute bottom-5 right-5 bg-black text-transparent bg-clip-text">
   <b>u</b>x/<b>u</b>i
 </h2>
 
