@@ -36,20 +36,20 @@ useGSAP(() => {
 }, []);
 
   return (
-    <div className="relative !h-dvh w-screen overflow-x-hidden" id="inicio">
+    <div className="relative h-dvh w-screen overflow-x-hidden" id="inicio">
       <div
         id="hero-frame"
         className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-flame"
       >
         <div>
           <div className="mt-24 px-5 sm:px-10">
-            <p className="mb-5 max-w-64 font-robert-regular text-soft-white text-2xl">
+            <p className="my-5 max-w-64 font-robert-regular text-soft-white text-2xl">
               Full-Stack <br /> Developer
             </p>
             <h1 className="special-font mb-5 hero-heading text-black">
-              rectjs <br />
+              reactjs <br />
               J<b>a</b>va <br />
-              Spring Boot
+              Spring B<b>o</b><b>o</b>t
             </h1>
             <p className="mb-5 max-w-80  font-robert-regular text-soft-white">
               Hola, soy Matías Carrera, estudiante de Ingeniería en Inteligencia Artificial en

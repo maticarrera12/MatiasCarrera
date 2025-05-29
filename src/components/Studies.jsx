@@ -58,7 +58,7 @@ const Studies = () => {
     const animateTexts = (texts) => {
       texts.forEach((text) => {
         gsap.to(text, {
-          color: "#ea580c",
+          color: "#ff4c00",
           scrollTrigger: {
             trigger: text,
             start: "top center",
@@ -102,18 +102,18 @@ const Studies = () => {
   }, []);
 
   return (
-    <div id="formacion" className="pb-20">
+    <div id="formacion" className="py-20 bg-white">
       {/* Sección de Educación */}
       <AnimatedTitle
         title="Formacion"
-        containerClass="text-5xl pt-5 !text-gray-700 text-center"
+        containerClass="text-5xl pt-5 !text-black text-center"
       />
 
       <div
         id="section-studies"
         className="relative font-robert-medium max-w-4xl mx-auto py-12"
       >
-        <div className="absolute top-0 left-4 w-1 h-full bg-gray-300 rounded-full"></div>
+        <div className="absolute top-0 left-4 w-1 h-full bg-gray-100 rounded-full"></div>
         <div
           ref={progressRefStudies}
           className="absolute top-0 left-4 w-1 bg-flame rounded-full origin-top"
@@ -126,11 +126,11 @@ const Studies = () => {
               <div>
                 <h3
                   ref={(el) => el && (textRefsStudies.current[index] = el)}
-                  className="text-lg font-bold text-gray-700"
+                  className="text-lg font-bold  text-black"
                 >
                   {item.title}
                 </h3>
-                <p className="text-sm text-gray-500">{item.date}</p>
+                <p className="text-sm text-gray-700">{item.date}</p>
               </div>
             </li>
           ))}
@@ -140,14 +140,14 @@ const Studies = () => {
       {/* Sección de Cursos */}
       <AnimatedTitle
         title="Cursos"
-        containerClass="text-5xl pt-5 !text-gray-700 text-center"
+        containerClass="text-5xl pt-5 !text-black text-center"
       />
 
       <div
         id="section-courses"
         className="relative font-robert-medium max-w-4xl mx-auto py-16"
       >
-        <div className="absolute top-0 left-4 w-1 h-full bg-gray-300 rounded-full"></div>
+        <div className="absolute top-0 left-4 w-1 h-full bg-gray-100 rounded-full"></div>
         <div
           ref={progressRefCourses}
           className="absolute top-0 left-4 w-1 bg-flame rounded-full origin-top"
@@ -160,11 +160,11 @@ const Studies = () => {
               <div>
                 <h3
                   ref={(el) => el && (textRefsCourses.current[index] = el)}
-                  className="text-lg font-bold text-gray-700"
+                  className="text-lg font-bold text-black"
                 >
                   {item.title}
                 </h3>
-                <p className="text-sm text-gray-500">{item.date}</p>
+                <p className="text-sm text-gray-700">{item.date}</p>
               </div>
             </li>
           ))}

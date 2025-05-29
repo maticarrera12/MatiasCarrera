@@ -44,7 +44,7 @@ const ContactMe = () => {
         onSubmit={handleSubmit}
         className="w-full max-w-lg bg-white rounded-lg shadow-lg p-6"
       >
-        <h2 className="font-zentry text-3xl font-bold text-[#1E1E1E] text-center mb-6">Contactame</h2>
+        <h2 className="font-zentry text-3xl font-bold text-black text-center mb-6">Contactame</h2>
 
         {isSent && (
           <p className="text-green-600 text-center mb-4 font-circular-web">

@@ -15,11 +15,11 @@ const ProjectCard = ({ title, image, description, projectLink, codeLink, technol
       </div>
 
       <div className="flex flex-col flex-grow">
-        <h3 className="text-2xl font-semibold text-gray-900 hover:text-blue-600 transition-colors duration-200">
+        <h3 className="text-2xl font-semibold text-black hover:text-blue-600 transition-colors duration-200">
           {title}
         </h3>
-        <p className="text-sm text-gray-600 mt-4 flex-grow">{description}</p>
-        <p className="text-sm text-gray-500 mt-2">Tecnologías: {technologies.join(", ")}</p>
+        <p className="text-sm text-black mt-4 flex-grow">{description}</p>
+        <p className="text-sm text-black mt-2">Tecnologías: {technologies.join(", ")}</p>
         <div className="flex gap-6 mt-6 justify-start">
           <a
             href={projectLink || "#"}
@@ -28,7 +28,7 @@ const ProjectCard = ({ title, image, description, projectLink, codeLink, technol
             className={`flex items-center text-sm font-medium transition duration-200 ${
               projectLink
                 ? "text-blue-600 hover:text-blue-500"
-                : "text-gray-400 cursor-not-allowed pointer-events-none"
+                : "text-black cursor-not-allowed pointer-events-none"
             }`}
           >
             <FaLink className="mr-2" size={18} />
@@ -60,8 +60,9 @@ const Projects = () => {
     : projects;
 
   return (
-    <div className="min-h-screen bg-gray-900 p-4 sm:p-8 md:p-12" id="proyectos">
-      <h2 className="text-3xl sm:text-4xl text-center font-general font-semibold text-soft-white mb-8 sm:mb-12">
+    <div className="min-h-screen bg-black p-4 sm:p-8 md:p-12" id="proyectos">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl sm:text-4xl text-center font-general font-semibold text-soft-white mb-8 sm:mb-12">
         Mis Proyectos
       </h2>
       {/* Botones de tecnología */}
@@ -100,6 +101,8 @@ const Projects = () => {
           </p>
         )}
       </div>
+      </div>
+      
     </div>
   );
 };
