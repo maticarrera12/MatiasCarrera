@@ -15,7 +15,7 @@ const ProjectCard = ({ title, image, description, projectLink, codeLink, technol
       </div>
 
       <div className="flex flex-col flex-grow">
-        <h3 className="text-2xl font-semibold text-black hover:text-blue-600 transition-colors duration-200">
+        <h3 className="text-2xl font-semibold text-black hover:text-flame transition-colors duration-300">
           {title}
         </h3>
         <p className="text-sm text-black mt-4 flex-grow">{description}</p>
