@@ -28,7 +28,7 @@ const ProjectCard = ({ title, image, description, projectLink, codeLink, technol
             className={`flex items-center text-sm font-medium transition duration-200 ${
               projectLink
                 ? "text-blue-600 hover:text-blue-500"
-                : "text-black cursor-not-allowed pointer-events-none"
+                : "text-gray-400 cursor-not-allowed pointer-events-none"
             }`}
           >
             <FaLink className="mr-2" size={18} />
