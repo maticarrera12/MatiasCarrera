@@ -60,11 +60,11 @@ const Hero = () => {
         </div>
 
         {/* Imagen a la derecha */}
-        <div className="flex-1 flex justify-center items-center relative h-full">
+        <div className="flex-1 flex justify-center items-center relative h-full min-h-dvh">
           <img
             src={portfolioIllustration}
             alt="portfolio illustration"
-            className="hidden md:block max-w-[1000px] w-full h-auto object-contain z-30 mt-24 "
+            className="hidden md:block max-w-[600px] mr-8 w-full h-auto object-contain z-30"
           />
 
           {/* UXUI blanco dentro del hero-frame, sobre la imagen */}
