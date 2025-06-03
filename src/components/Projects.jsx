@@ -5,7 +5,6 @@ import { projects, technologies } from "../assets/assets";
 const ProjectCard = ({ title, image, description, projectLink, codeLink, technologies }) => {
   return (
     <div className="w-full min-w-[300px] mx-auto bg-white rounded-lg shadow-lg hover:shadow-2xl transform transition-all duration-300 ease-in-out hover:scale-105 overflow-hidden p-6 mb-8 flex flex-col">
-      {/* Imagen del proyecto */}
       <div className="relative w-full h-96 mb-6">
         <img
           src={image}
@@ -60,9 +59,9 @@ const Projects = () => {
     : projects;
 
   return (
-    <div className="min-h-screen bg-black p-4 sm:p-8 md:p-12" id="proyectos">
+    <div className="min-h-screen bg-black py-10 px-4 sm:p-8 md:p-12" id="proyectos">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl text-center font-general font-semibold text-soft-white mb-8 sm:mb-12">
+        <h2 className="text-3xl sm:text-4xl text-center font-semibold text-soft-white mb-8 sm:mb-12">
         Mis Proyectos
       </h2>
       {/* Botones de tecnología */}

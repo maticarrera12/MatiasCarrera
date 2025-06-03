@@ -4,8 +4,9 @@ const Footer = () => {
   return (
     <div className="bg-black p-4">
       <div className="text-center mb-2">
-        <p className="text-xs font-circular-web text-soft-white">
-          &copy; 2024 Matías Carrera.
+        <p className="text-xs  text-soft-white">
+          Matías Carrera <br />
+          FullStack Dev
         </p>
       </div>
       <div className="flex justify-center gap-4">

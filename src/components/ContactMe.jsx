@@ -44,20 +44,20 @@ const ContactMe = () => {
         onSubmit={handleSubmit}
         className="w-full max-w-lg bg-white rounded-lg shadow-lg p-6"
       >
-        <h2 className="font-zentry text-3xl font-bold text-black text-center mb-6">Contactame</h2>
+        <h2 className="text-3xl font-bold text-black text-center mb-6">Contactame</h2>
 
         {isSent && (
-          <p className="text-green-600 text-center mb-4 font-circular-web">
+          <p className="text-green-600 text-center mb-4 ">
             ¡Mensaje enviado con éxito!
           </p>
         )}
 
         {error && (
-          <p className="text-red-600 text-center mb-4 font-circular-web">{error}</p>
+          <p className="text-red-600 text-center mb-4 ">{error}</p>
         )}
 
         <div className="mb-4">
-          <label htmlFor="name" className="font-circular-web block text-[#1E1E1E] font-bold mb-2">
+          <label htmlFor="name" className=" block text-[#1E1E1E] font-bold mb-2">
             Nombre:
           </label>
           <input
@@ -72,7 +72,7 @@ const ContactMe = () => {
         </div>
 
         <div className="mb-4">
-          <label htmlFor="email" className="font-circular-web block text-[#1E1E1E] font-bold mb-2">
+          <label htmlFor="email" className=" block text-[#1E1E1E] font-bold mb-2">
             Correo Electrónico:
           </label>
           <input
@@ -87,7 +87,7 @@ const ContactMe = () => {
         </div>
 
         <div className="mb-4">
-          <label htmlFor="message" className="font-circular-web block text-[#1E1E1E] font-bold mb-2">
+          <label htmlFor="message" className=" block text-[#1E1E1E] font-bold mb-2">
             Mensaje:
           </label>
           <textarea
@@ -103,7 +103,7 @@ const ContactMe = () => {
 
         <button
           type="submit"
-          className="font-circular-web w-full bg-flame text-soft-white py-2 px-4 rounded-lg hover:opacity-80 transition duration-200"
+          className=" w-full bg-flame text-soft-white py-2 px-4 rounded-lg hover:opacity-80 transition duration-200"
         >
           Enviar Mensaje
         </button>

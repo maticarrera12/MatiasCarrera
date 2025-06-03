@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa"; // Importar los iconos de
 
 const ButtonBar = () => {
   return (
-    <div className="fixed right-0 bottom-64 transform flex flex-col gap-3 p-3 z-50 bg-black bg-opacity-40 rounded-lg shadow-lg">
+    <div className="hidden md:flex fixed right-0 top-32 lg:top-96 transform  flex-col gap-3 p-3 z-50 bg-black bg-opacity-40 rounded-lg shadow-lg">
       {/* Botón de GitHub */}
       <a
         href="https://github.com/maticarrera12"

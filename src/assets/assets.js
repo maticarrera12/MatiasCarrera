@@ -83,16 +83,16 @@ export const technologies = [
   //   image: awsLogo,
   //   category: "back-end",
   // },
-  {
-    name: "Git",
-    image: githubLogo,
-    category: "Herramientas",
-  },
-  {
-    name: "Figma",
-    image: figmaLogo,
-    category: "Herramientas",
-  },
+  // {
+  //   name: "Git",
+  //   image: githubLogo,
+  //   category: "Herramientas",
+  // },
+  // {
+  //   name: "Figma",
+  //   image: figmaLogo,
+  //   category: "Herramientas",
+  // },
 ];
 
 export const projects = [

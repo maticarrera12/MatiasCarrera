@@ -17,7 +17,7 @@ const BentoCard = ({ image, title }) => {
 
       {/* Contenedor del texto */}
       <div className="relative z-10 flex flex-col justify-center items-center py-3 bg-opacity-50 rounded-b-lg">
-        <h1 className="text-xs font-roboto font-medium text-center text-blue-50">
+        <h1 className="text-xs  font-medium text-center text-blue-50">
           {title}
         </h1>
       </div>
@@ -40,11 +40,11 @@ const Tecnologies = () => {
   };
 
   return (
-    <div id="tecnologias" className="min-h-screen w-screen bg-flame flex flex-col items-center justify-center">
+    <div id="tecnologias" className="min-h-screen w-screen py-10 bg-flame flex flex-col items-center justify-center">
       {/* Título de la sección */}
       <AnimatedTitle
         title="Tecnologías"
-        containerClass="text-5xl pt-5 !text-soft-white text-center"
+        containerClass="text-4xl py-5 !text-soft-white text-center"
       />
 
       {/* Front-end */}
@@ -65,7 +65,7 @@ const Tecnologies = () => {
         {renderTechnologies("back-end")}
       </div>
 
-      {/* Herramientas */}
+      {/* Herramientas
       <AnimatedTitle
         title="Herramientas"
         containerClass="mt-5 mb-10 text-3xl !text-soft-white text-center"
@@ -73,7 +73,7 @@ const Tecnologies = () => {
       <div className="flex flex-wrap mb-5 gap-8 justify-center md:max-w-[800px]">
         {renderTechnologies("Herramientas")}
 
-      </div>
+      </div> */}
     </div>
   );
 };

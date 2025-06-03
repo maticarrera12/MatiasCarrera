@@ -58,7 +58,7 @@ const Studies = () => {
     const animateTexts = (texts) => {
       texts.forEach((text) => {
         gsap.to(text, {
-          color: "#ff4c00",
+          color: "#FF3500",
           scrollTrigger: {
             trigger: text,
             start: "top center",
@@ -106,7 +106,7 @@ const Studies = () => {
       {/* Sección de Educación */}
       <AnimatedTitle
         title="Formacion"
-        containerClass="text-5xl pt-5 !text-black text-center"
+        containerClass="text-4xl pt-5 !text-black text-center"
       />
 
       <div
@@ -140,7 +140,7 @@ const Studies = () => {
       {/* Sección de Cursos */}
       <AnimatedTitle
         title="Cursos"
-        containerClass="text-5xl pt-5 !text-black text-center"
+        containerClass="text-4xl pt-5 !text-black text-center"
       />
 
       <div
