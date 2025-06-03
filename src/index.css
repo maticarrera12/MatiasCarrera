@@ -55,7 +55,7 @@ html {
   }
 
   .hero-heading {
-    @apply uppercase  font-black text-7xl sm:right-10  md:text-[9rem]
+    @apply uppercase  font-black text-8xl md:text-9xl sm:right-10 
   }
 
 
