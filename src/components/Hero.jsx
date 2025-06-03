@@ -26,52 +26,50 @@ const Hero = () => {
   }, []);
 
   return (
+    <div className="relative min-h-dvh w-screen overflow-x-hidden" id="inicio">
+      <div
+        id="hero-frame"
+        className="relative z-10 min-h-dvh w-screen overflow-hidden rounded-lg bg-flame flex "
+      >
+        {/* Contenido a la izquierda */}
+        <div className="flex-1 mt-24 px-5 sm:px-10 z-20">
+          <p className="my-5 max-w-64 text-soft-white text-2xl">
+            Full-Stack <br /> Developer
+          </p>
+          <h1 className="font-vicenza hero-heading text-black">REACTJS</h1>
+          <h1 className="font-vicenza hero-heading text-black">JAVA</h1>
+          <h1 className="font-vicenza hero-heading text-black">SPRINGBOOT</h1>
 
-<div className="relative h-dvh w-screen overflow-x-hidden" id="inicio">
-  <div
-    id="hero-frame"
-    className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-flame flex "
-  >
-    {/* Contenido a la izquierda */}
-    <div className="flex-1 mt-24 px-5 sm:px-10 z-20">
-      <p className="my-5 max-w-64 text-soft-white text-2xl">
-        Full-Stack <br /> Developer
-      </p>
-      <h1 className="font-vicenza hero-heading text-black">REACTJS</h1>
-      <h1 className="font-vicenza hero-heading text-black">JAVA</h1>
-      <h1 className="font-vicenza hero-heading text-black">SPRINGBOOT</h1>
+          <p className="my-5 max-w-96 text-xs sm:text-lg text-soft-white">
+            Hola, soy Matías Carrera, estudiante de Ingeniería en Inteligencia
+            Artificial en la Universidad de Palermo, con 3 años de formación en
+            Diseño Gráfico y Multimedia en la UADE. Apasionado por la
+            programación y el diseño UX/UI, busco combinar mi creatividad y
+            habilidades técnicas para crear soluciones innovadoras y centradas
+            en el usuario.
+          </p>
 
-      <p className="my-5 max-w-96 text-sm md:text-lg text-soft-white">
-        Hola, soy Matías Carrera, estudiante de Ingeniería en Inteligencia
-        Artificial en la Universidad de Palermo, con 3 años de formación
-        en Diseño Gráfico y Multimedia en la UADE. Apasionado por la
-        programación y el diseño UX/UI, busco combinar mi creatividad y
-        habilidades técnicas para crear soluciones innovadoras y centradas
-        en el usuario.
-      </p>
+          <a href="#contacto" className="cursor-pointer">
+            <button className="group  mb-10 relative overflow-hidden w-fit rounded-full px-7 py-3 bg-black text-white flex-center gap-1">
+              <TiLocationArrow />
+              <span className="relative z-50 inline-flex overflow-hidden text-xs uppercase">
+                Contactame
+              </span>
+            </button>
+          </a>
+        </div>
 
-      <a href="#contacto" className="cursor-pointer">
-        <button className="group relative overflow-hidden w-fit rounded-full px-7 py-3 bg-black text-white flex-center gap-1">
-          <TiLocationArrow />
-          <span className="relative z-50 inline-flex overflow-hidden text-xs uppercase">
-            Contactame
-          </span>
-        </button>
-      </a>
-    </div>
+        {/* Imagen a la derecha */}
+        <div className="flex-1 flex justify-center items-center relative h-full">
+          <img
+            src={portfolioIllustration}
+            alt="portfolio illustration"
+            className="hidden md:block max-w-[1000px] w-full h-auto object-contain z-30 mt-24 "
+          />
 
-    {/* Imagen a la derecha */}
-    <div className="flex-1 flex justify-center items-center relative h-full">
-      <img
-        src={portfolioIllustration}
-        alt="portfolio illustration"
-        className="hidden md:block max-w-[1000px] w-full h-auto object-contain z-30"
-      />
-
-      {/* UXUI blanco dentro del hero-frame, sobre la imagen */}
-
-  </div>
-     <h2 className="font-vicenza hero-heading absolute bottom-5 right-5 z-40 text-soft-white">
+          {/* UXUI blanco dentro del hero-frame, sobre la imagen */}
+        </div>
+        <h2 className="font-vicenza hero-heading absolute bottom-5 right-5 z-40 text-soft-white">
           UXUI
         </h2>
 
@@ -82,8 +80,7 @@ const Hero = () => {
       <h2 className="font-vicenza hero-heading absolute bottom-5 right-5 bg-black text-transparent bg-clip-text">
         UXUI
       </h2>
-</div>
-
-)
+    </div>
+  );
 }
 export default Hero;

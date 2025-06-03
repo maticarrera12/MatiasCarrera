@@ -1,14 +1,14 @@
 const CallToAction = () => {
   return (
     <div className="bg-flame h-72 flex items-center justify-center">
-      <div className="w-full max-w-[800px] md:flex-row mx-auto flex flex-col items-center justify-center space-y-8">
+      <div className="w-full max-w-[800px] md:flex-row mx-auto flex flex-col text-center items-center md:text-left justify-center space-y-8">
         <div>
           <h2>
-            <span className="text-4xl sm:text-5xl font-semibold text-white text-left">
+            <span className="text-4xl sm:text-5xl font-semibold text-white">
               ¿Querés trabajar conmigo?
             </span>
           </h2>
-          <p className="text-white font-semibold text-3xl sm:text-4xl mt-2 text-left">
+          <p className="text-white font-semibold text-3xl sm:text-4xl mt-2">
             ¡Trabajemos Juntos!
           </p>
         </div>
