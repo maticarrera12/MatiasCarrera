@@ -1,4 +1,3 @@
-
 const CallToAction = () => {
   return (
     <div className="bg-flame h-72 flex items-center justify-center">
@@ -15,7 +14,7 @@ const CallToAction = () => {
         </div>
         <div className="flex gap-4 justify-center">
           <a
-            href="https://www.linkedin.com/in/tu-usuario/"
+            href="https://www.linkedin.com/in/matias-carrera"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-lg bg-transparent text-white font-bold shadow hover:bg-white hover:text-flame border-2 border-white transition-colors duration-200"
@@ -23,7 +22,9 @@ const CallToAction = () => {
             Linkedin
           </a>
           <a
-            href="mailto:mcarreradev12@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&to=mcarreradev12@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-6 py-3 rounded-lg bg-transparent text-white font-bold shadow hover:bg-white hover:text-flame border-2 border-white transition-colors duration-200"
           >
             Gmail
@@ -32,6 +33,6 @@ const CallToAction = () => {
       </div>
     </div>
   );
-}
+};
 
-export default CallToAction
+export default CallToAction;
