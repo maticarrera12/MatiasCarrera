@@ -59,9 +59,9 @@ const Projects = () => {
     : projects;
 
   return (
-    <div className="min-h-screen bg-black py-10 px-4 sm:p-8 md:p-12" id="proyectos">
+    <div className="min-h-screen bg-white py-10 px-4 sm:p-8 md:p-12" id="proyectos">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl text-center font-semibold text-soft-white mb-8 sm:mb-12">
+        <h2 className="text-3xl sm:text-4xl text-center font-semibold text-black mb-8 sm:mb-12">
         Mis Proyectos
       </h2>
       {/* Botones de tecnología */}
@@ -70,7 +70,7 @@ const Projects = () => {
           <button
             key={index}
             className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium ${
-              selectedTech === tech.name ? "bg-flame  text-soft-white": "bg-soft-white text-[#1E1E1E]"
+              selectedTech === tech.name ? "bg-flame  text-white": "bg-black text-white"
             } hover:bg-flame hover:text-soft-white transition duration-300 ease-in-out`}
             onClick={() => setSelectedTech(selectedTech === tech.name ? null : tech.name)} // Toggle selección
           >

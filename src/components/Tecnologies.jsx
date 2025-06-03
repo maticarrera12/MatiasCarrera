@@ -40,7 +40,7 @@ const Tecnologies = () => {
   };
 
   return (
-    <div id="tecnologias" className="min-h-screen w-screen py-10 bg-flame flex flex-col items-center justify-center">
+    <div id="tecnologias" className="min-h-screen w-screen py-10 bg-black flex flex-col items-center justify-center">
       {/* Título de la sección */}
       <AnimatedTitle
         title="Tecnologías"

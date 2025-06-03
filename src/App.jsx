@@ -1,4 +1,5 @@
 import ButtonBar from "./components/ButtonBar"
+import CallToAction from "./components/CallToAction"
 import ContactMe from "./components/ContactMe"
 import Footer from "./components/Footer"
 import Hero from "./components/Hero"
@@ -17,8 +18,9 @@ const App = () => {
       <Navbar/>
       <Hero/>
       <Projects/>
-     <Tecnologies/> 
+      <CallToAction/>
      <Studies/>
+     <Tecnologies/> 
      <ContactMe/>
      <Footer/>
     </main>
