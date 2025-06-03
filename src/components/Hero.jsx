@@ -1,9 +1,8 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import _ScrollTrigger from "gsap/ScrollTrigger";
-
 import { TiLocationArrow } from "react-icons/ti";
-
+import portfolioIllustration from "../assets/images/portfolio-illustration.png";
 gsap.registerPlugin(_ScrollTrigger);
 
 const Hero = () => {
