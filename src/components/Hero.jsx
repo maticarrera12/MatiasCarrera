@@ -41,8 +41,8 @@ const Hero = () => {
             <h2 className="font-vicenza hero-heading text-black">JAVA</h2>
             <h2 className="font-vicenza hero-heading text-black">SPRINGBOOT</h2>
           </div>
-
-          <p className="my-5 max-w-96 text-xs sm:text-lg text-soft-white">
+          <div>
+             <p className="my-5 max-w-96 text-xs sm:text-lg text-soft-white">
             Hola, soy Matías Carrera, estudiante de Ingeniería en Inteligencia
             Artificial en la Universidad de Palermo, con 3 años de formación en
             Diseño Gráfico y Multimedia en la UADE. Apasionado por la
@@ -59,6 +59,8 @@ const Hero = () => {
               </span>
             </button>
           </a>
+          </div>
+         
         </div>
 
         {/* Imagen a la derecha */}
