@@ -32,13 +32,15 @@ const Hero = () => {
         className="relative z-10 min-h-dvh w-screen overflow-hidden rounded-lg bg-flame flex "
       >
         {/* Contenido a la izquierda */}
-        <div className="flex-1 mt-24 px-5 sm:px-10 z-20">
+        <div className="flex flex-1 justify-around flex-col mt-24 px-5 sm:px-10 z-20">
           <p className="mt-5 max-w-64 leading-6 text-soft-white text-2xl">
             Full-Stack <br /> Developer
           </p>
-          <h1 className="font-vicenza hero-heading text-black">REACTJS</h1>
-          <h1 className="font-vicenza hero-heading text-black">JAVA</h1>
-          <h1 className="font-vicenza hero-heading text-black">SPRINGBOOT</h1>
+          <div>
+            <h2 className="font-vicenza hero-heading text-black">REACTJS</h2>
+            <h2 className="font-vicenza hero-heading text-black">JAVA</h2>
+            <h2 className="font-vicenza hero-heading text-black">SPRINGBOOT</h2>
+          </div>
 
           <p className="my-5 max-w-96 text-xs sm:text-lg text-soft-white">
             Hola, soy Matías Carrera, estudiante de Ingeniería en Inteligencia
@@ -82,5 +84,5 @@ const Hero = () => {
       </h2>
     </div>
   );
-}
+};
 export default Hero;
