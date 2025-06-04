@@ -26,7 +26,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative min-h-dvh w-screen overflow-x-hidden" id="inicio">
+    <div className="relative max-h-dvh w-screen overflow-x-hidden" id="inicio">
       <div
         id="hero-frame"
         className="relative z-10 w-screen overflow-hidden rounded-lg bg-flame flex "
