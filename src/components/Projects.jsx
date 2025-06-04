@@ -1,9 +1,14 @@
 import { FaGithub, FaLink } from "react-icons/fa"; // Importar los iconos de react-icons
 import { useState } from "react";
 import { projects, technologies } from "../assets/assets";
-
+import { technologies as allTechnologies } from "../assets/assets";
 const ProjectCard = ({ title, image, description, projectLink, codeLink, technologies }) => {
-  return (
+  const getTechnologyImage = (techName) => {
+    const tech = allTechnologies.find((t) => t.name === techName);
+    return tech ? tech.image : null;
+  };
+
+ return (
     <div className="w-full min-w-[300px] mx-auto bg-white rounded-lg shadow-lg hover:shadow-2xl transform transition-all duration-300 ease-in-out hover:scale-105 overflow-hidden p-6 mb-8 flex flex-col">
       <div className="relative w-full h-96 mb-6">
         <img
@@ -18,7 +23,26 @@ const ProjectCard = ({ title, image, description, projectLink, codeLink, technol
           {title}
         </h3>
         <p className="text-sm text-black mt-4 flex-grow">{description}</p>
-        <p className="text-sm text-black mt-2">Tecnologías: {technologies.join(", ")}</p>
+        <p>Stack: </p>
+        {/* Tecnologías como íconos */}
+        <div className="flex flex-wrap gap-1 mt-4 items-center">
+          {technologies.map((techName) => {
+            const techImage = getTechnologyImage(techName);
+            return (
+              <div key={techName} className="w-8 h-8">
+                {techImage && (
+                  <img
+                    src={techImage}
+                    alt={techName}
+                    title={techName}
+                    className="w-full h-full object-contain"
+                  />
+                )}
+              </div>
+            );
+          })}
+        </div>
+
         <div className="flex gap-6 mt-6 justify-start">
           <a
             href={projectLink || "#"}
@@ -34,7 +58,6 @@ const ProjectCard = ({ title, image, description, projectLink, codeLink, technol
             Ver Proyecto
           </a>
 
-          {/* Botón para ver el código */}
           <a
             href={codeLink}
             target="_blank"
