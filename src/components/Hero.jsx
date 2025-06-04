@@ -29,7 +29,7 @@ const Hero = () => {
     <div className="relative min-h-dvh w-screen overflow-x-hidden" id="inicio">
       <div
         id="hero-frame"
-        className="relative z-10 min-h-dvh w-screen overflow-hidden rounded-lg bg-flame flex "
+        className="relative z-10 w-screen overflow-hidden rounded-lg bg-flame flex "
       >
         {/* Contenido a la izquierda */}
         <div className="flex flex-1 justify-around flex-col mt-24 px-5 sm:px-10 z-20">
