@@ -33,7 +33,7 @@ const Hero = () => {
       >
         {/* Contenido a la izquierda */}
         <div className="flex-1 mt-24 px-5 sm:px-10 z-20">
-          <p className="my-5 max-w-64 text-soft-white text-2xl">
+          <p className="mt-5 max-w-64 leading-6 text-soft-white text-2xl">
             Full-Stack <br /> Developer
           </p>
           <h1 className="font-vicenza hero-heading text-black">REACTJS</h1>
@@ -64,7 +64,7 @@ const Hero = () => {
           <img
             src={portfolioIllustration}
             alt="portfolio illustration"
-            className="hidden md:block max-w-[600px] mr-8 w-full h-auto object-contain z-30"
+            className="hidden sm:block max-w-[600px] mr-8 w-full h-auto object-contain z-30"
           />
 
           {/* UXUI blanco dentro del hero-frame, sobre la imagen */}
