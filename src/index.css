@@ -11,8 +11,9 @@ body {
 
   font-family: "DM Sans", sans-serif;
 }
-html {
+html, body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 @layer base {
@@ -55,7 +56,7 @@ html {
   }
 
   .hero-heading {
-    @apply uppercase  font-black text-6xl md:text-8xl sm:right-10 
+    @apply uppercase  font-black text-6xl sm:text-8xl sm:right-10 
   }
 
 

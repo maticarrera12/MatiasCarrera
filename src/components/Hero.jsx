@@ -29,18 +29,20 @@ const Hero = () => {
     <div className="relative min-h-dvh w-screen overflow-x-hidden" id="inicio">
       <div
         id="hero-frame"
-        className="relative z-10 min-h-dvh w-screen overflow-hidden rounded-lg bg-flame flex "
+        className="relative z-10 w-screen overflow-hidden rounded-lg bg-flame flex "
       >
         {/* Contenido a la izquierda */}
-        <div className="flex-1 mt-24 px-5 sm:px-10 z-20">
-          <p className="my-5 max-w-64 text-soft-white text-2xl">
+        <div className="flex flex-1 justify-around flex-col mt-24 px-5 sm:px-10 z-20">
+          <p className="mt-5 max-w-64 leading-6 text-soft-white text-2xl">
             Full-Stack <br /> Developer
           </p>
-          <h1 className="font-vicenza hero-heading text-black">REACTJS</h1>
-          <h1 className="font-vicenza hero-heading text-black">JAVA</h1>
-          <h1 className="font-vicenza hero-heading text-black">SPRINGBOOT</h1>
-
-          <p className="my-5 max-w-96 text-xs sm:text-lg text-soft-white">
+          <div>
+            <h2 className="font-vicenza hero-heading text-black">REACTJS</h2>
+            <h2 className="font-vicenza hero-heading text-black">JAVA</h2>
+            <h2 className="font-vicenza hero-heading text-black">SPRINGBOOT</h2>
+          </div>
+          <div>
+             <p className="my-5 max-w-96 text-xs sm:text-lg text-soft-white">
             Hola, soy Matías Carrera, estudiante de Ingeniería en Inteligencia
             Artificial en la Universidad de Palermo, con 3 años de formación en
             Diseño Gráfico y Multimedia en la UADE. Apasionado por la
@@ -57,14 +59,16 @@ const Hero = () => {
               </span>
             </button>
           </a>
+          </div>
+         
         </div>
 
         {/* Imagen a la derecha */}
-        <div className="flex-1 flex justify-center items-center relative h-full">
+        <div className="flex-1 flex justify-center items-center relative h-full min-h-dvh">
           <img
             src={portfolioIllustration}
             alt="portfolio illustration"
-            className="hidden md:block max-w-[1000px] w-full h-auto object-contain z-30 mt-24 "
+            className="hidden sm:block max-w-[600px] mr-8 w-full h-auto object-contain z-30"
           />
 
           {/* UXUI blanco dentro del hero-frame, sobre la imagen */}
@@ -82,5 +86,5 @@ const Hero = () => {
       </h2>
     </div>
   );
-}
+};
 export default Hero;

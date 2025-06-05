@@ -78,21 +78,7 @@ export const technologies = [
     image: expressjsLogo,
     category: "back-end",
   },
-  // {
-  //   name: "AWS",
-  //   image: awsLogo,
-  //   category: "back-end",
-  // },
-  // {
-  //   name: "Git",
-  //   image: githubLogo,
-  //   category: "Herramientas",
-  // },
-  // {
-  //   name: "Figma",
-  //   image: figmaLogo,
-  //   category: "Herramientas",
-  // },
+
 ];
 
 export const projects = [
@@ -121,15 +107,6 @@ export const projects = [
     codeLink: "https://github.com/maticarrera12/quetedebo",
     technologies: ["ReactJS", "HTML", "CSS", "JavaScript"]
   },
-  // {
-  //   title: "Carrito de Compras",
-  //   image: ssmedreserva,
-  //   description:
-  //     "Un carrito de compras realizado con ReactJS, Bootstrap 5 y MaterialUI",
-  //   projectLink: "https://carritocompras.matiascarreadev.com/",
-  //   codeLink: "https://github.com/maticarrera12/CarritoComprasReactJS",
-  //   technologies: ["ReactJS", "HTML", "CSS", "JavaScript"],
-  // },
   {
     title: "FilmTrailers",
     image: ssfilmtrailers,
