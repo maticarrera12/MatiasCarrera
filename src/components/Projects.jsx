@@ -95,7 +95,7 @@ const Projects = () => {
             />
           ))
         ) : (
-          <p className="text-soft-white text-center col-span-full">
+          <p className="text-black text-center col-span-full">
             Todavía no hay proyectos que utilicen la tecnología seleccionada, pero los habrá😉.
           </p>
         )}
