@@ -32,17 +32,17 @@ const Hero = () => {
         className="relative z-10 w-screen overflow-hidden rounded-lg bg-flame flex "
       >
         {/* Contenido a la izquierda */}
-        <div className="flex flex-1 justify-around flex-col mt-24 px-5 sm:px-10 z-20">
+        <div className="flex flex-1 gap-5 lg:justify-around flex-col mt-24 px-5 sm:px-10 z-20">
           <p className="mt-5 max-w-64 leading-6 text-soft-white text-2xl">
             Full-Stack <br /> Developer
           </p>
           <div>
-            <h2 className="font-vicenza hero-heading text-black">REACTJS</h2>
-            <h2 className="font-vicenza hero-heading text-black">JAVA</h2>
-            <h2 className="font-vicenza hero-heading text-black">SPRINGBOOT</h2>
+            <h2 className="font-otbrut hero-heading text-black">REACTJS</h2>
+            <h2 className="font-otbrut hero-heading text-black">JAVA</h2>
+            <h2 className="font-otbrut hero-heading text-black">SPRINGBOOT</h2>
           </div>
           <div>
-             <p className="my-5 max-w-96 text-xs sm:text-lg text-soft-white">
+             <p className="mb-5 max-w-96 text-xs sm:text-lg text-soft-white">
             Hola, soy Matías Carrera, estudiante de Ingeniería en Inteligencia
             Artificial en la Universidad de Palermo, con 3 años de formación en
             Diseño Gráfico y Multimedia en la UADE. Apasionado por la
@@ -68,21 +68,21 @@ const Hero = () => {
           <img
             src={portfolioIllustration}
             alt="portfolio illustration"
-            className="hidden sm:block max-w-[600px] mr-8 w-full h-auto object-contain z-30"
+            className="hidden lg:block min-w-[300px] max-w-[600px] mr-8 w-full h-auto object-contain z-30"
           />
 
           {/* UXUI blanco dentro del hero-frame, sobre la imagen */}
         </div>
-        <h2 className="font-vicenza hero-heading absolute bottom-5 right-5 z-40 text-soft-white">
-          UXUI
+        <h2 className="font-otbrut hero-heading absolute bottom-5 right-5 z-40 text-soft-white">
+          UX/UI
         </h2>
 
         <div className="absolute left-0 top-0 z-40 size-full">
           <div className="mt-24 px-5 sm:px-10"></div>
         </div>
       </div>
-      <h2 className="font-vicenza hero-heading absolute bottom-5 right-5 bg-black text-transparent bg-clip-text">
-        UXUI
+      <h2 className="font-otbrut hero-heading absolute bottom-5 right-5 bg-black text-transparent bg-clip-text">
+        UX/UI
       </h2>
     </div>
   );

@@ -4,12 +4,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        vicenza: ["vicenza", "serif"],
+        aeonik: ["AeonikPro", "serif"],
+        otbrut: ["OTBrut", "serif"],
       },
       colors: {
         "soft-white": "#F5FBEF",
-        "dark-purple": "#2E1760",
-        "vibrant-blue": "#3423A6",
         "dark-gray": "#333333",
         'flame': "#FF3500",
       },
