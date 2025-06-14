@@ -1,8 +1,6 @@
 import reactLogo from "../assets/images/react.png";
 import nodeLogo from "../assets/images/node.png";
-import githubLogo from "../assets/images/git.png";
 import cssLogo from "../assets/images/css.png";
-import figmaLogo from "../assets/images/figma.png";
 import htmlLogo from "../assets/images/html.png";
 import javaLogo from "../assets/images/java.png";
 import jsLogo from "../assets/images/js.png";
@@ -17,22 +15,8 @@ import expressjsLogo from "../assets/images/expressjs.png"
 import ssawwwardwinner from "../assets/images/ssawwwardwinner.png"
 import ssquetedebo from "../assets/images/quetedebo.png"
 import ssvelyo from "../assets/images/ssvelyo.png"
+import typescriptLogo from "../assets/images/typescript.png";
 export const technologies = [
-  {
-    name: "HTML",
-    image: htmlLogo,
-    category: "front-end",
-  },
-  {
-    name: "CSS",
-    image: cssLogo,
-    category: "front-end",
-  },
-  {
-    name: "JavaScript",
-    image: jsLogo,
-    category: "front-end",
-  },
   {
     name: "ReactJS",
     image: reactLogo,
@@ -41,6 +25,26 @@ export const technologies = [
   {
     name: "TailwindCSS",
     image: tailwindLogo,
+    category: "front-end",
+  },
+  {
+    name: "JavaScript",
+    image: jsLogo,
+    category: "front-end",
+  },
+  {
+    name: "TypeScript",
+    image: typescriptLogo,
+    category: "front-end",
+  },
+  {
+    name: "HTML",
+    image: htmlLogo,
+    category: "front-end",
+  },
+  {
+    name: "CSS",
+    image: cssLogo,
     category: "front-end",
   },
   {
@@ -95,7 +99,7 @@ export const projects = [
     image: ssmedreserva,
     description:
       "MedReserva es una aplicación web desarrollada con el stack MERN (MongoDB, Express.js, ReactJS y Node.js) para la gestión de turnos médicos. Permite a pacientes reservar turnos, a médicos administrar su disponibilidad y a administradores gestionar usuarios y especialidades. La app incluye autenticación por roles y está integrada con Mercado Pago para la gestión de pagos. El diseño está construido con TailwindCSS, y se utilizan librerías como React Router y Axios para la navegación y consumo de APIs.",
-    projectLink: "https://med-reserva.vercel.app/",
+    projectLink: "https://med-reserva.vercel.app",
     codeLink: "https://github.com/maticarrera12/MedReserva",
     technologies: ["ReactJS", "Node.js", "MongoDB", "TailwindCSS", "HTML", "CSS", "JavaScript" ,"Express.js"],
   },
@@ -103,16 +107,16 @@ export const projects = [
     title: "QueTeDebo?",
     image: ssquetedebo,
     description: "¿Saliste con amigos y uno terminó pagando todo? Con esta app no hace falta hacer cuentas raras ni pelearse con la calculadora. Cargás quién pagó qué y te dice al toque cuánto tiene que poner cada uno para que todos queden a mano. ¡Ideal para cenas, birras o viajes!",
-    projectLink: "https://maticarrera12.github.io/quetedebo",
+    projectLink: "https://quetedebo.vercel.app",
     codeLink: "https://github.com/maticarrera12/quetedebo",
-    technologies: ["ReactJS", "HTML", "CSS", "JavaScript"]
+    technologies: ["ReactJS", "TypeScript", "TailwindCSS", "JavaScript"]
   },
   {
     title: "FilmTrailers",
     image: ssfilmtrailers,
     description:
     "Clon de una plataforma de series y peliculas muy famosa.",
-    projectLink: "https://film-trailers.vercel.app/",
+    projectLink: "https://film-trailers.vercel.app",
     codeLink: "https://github.com/maticarrera12/FilmTrailers",
     technologies: ["ReactJS", "HTML", "CSS","TailwindCSS", "JavaScript"],
   },
