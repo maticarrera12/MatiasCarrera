@@ -14,7 +14,7 @@ const ProjectCard = ({ title, image, description, projectLink, codeLink, technol
         <img
           src={image}
           alt={`Imagen del proyecto ${title}`}
-          className="w-full h-full object-cover rounded-lg opacity-90 hover:opacity-100 transition-opacity duration-300 ease-in-out"
+          className="w-full h-full object-contain rounded-lg opacity-90 hover:opacity-100 transition-opacity duration-300 ease-in-out"
         />
       </div>
 

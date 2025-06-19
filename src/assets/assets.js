@@ -16,7 +16,15 @@ import ssawwwardwinner from "../assets/images/ssawwwardwinner.png"
 import ssquetedebo from "../assets/images/quetedebo.png"
 import ssvelyo from "../assets/images/ssvelyo.png"
 import typescriptLogo from "../assets/images/typescript.png";
+import nextlogo from "../assets/images/next.png";
+import ssinquirai from "../assets/images/ssinquirai.png";
+
 export const technologies = [
+  {
+    name: "Next.js",
+    image: nextlogo,
+    category: "front-end",
+  },
   {
     name: "ReactJS",
     image: reactLogo,
@@ -85,7 +93,15 @@ export const technologies = [
 
 ];
 
-export const projects = [
+export const projects = [{
+  title: "InquirAi",
+  image: ssinquirai,
+  description:
+    "InquirAi es una aplicación web que permite a los usuarios realizar preguntas y recibir respuestas generadas por inteligencia artificial. Utiliza la API de OpenAI para procesar las preguntas y generar respuestas. La aplicación cuenta con un diseño responsivo, una interfaz de usuario intuitiva y un sistema de autenticación para usuarios registrados. Los usuarios pueden hacer preguntas, ver respuestas anteriores y gestionar su perfil.",
+  projectLink: "https://inquirai-dldx.vercel.app",
+  codeLink: "https://github.com/maticarrera12/inquirai",
+  technologies:["Next.js", "TailwindCSS","TypeScript", "JavaScript",  "MongoDB"],
+},
   {
     title: "Velyo",
     image: ssvelyo,
