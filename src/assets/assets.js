@@ -127,6 +127,15 @@ export const projects = [{
     codeLink: "https://github.com/maticarrera12/quetedebo",
     technologies: ["ReactJS", "TypeScript", "TailwindCSS", "JavaScript"]
   },
+    {
+    title: "Awwward-winner",
+    image: ssawwwardwinner,
+    description:
+    "Clon de una pagina awwward-winner.",
+    projectLink: "https://awwwards-winner.vercel.app/",
+    codeLink: "https://github.com/maticarrera12/awwwards-winner",
+    technologies: ["ReactJS", "HTML", "CSS","TailwindCSS", "JavaScript"],
+  },
   {
     title: "FilmTrailers",
     image: ssfilmtrailers,
@@ -136,14 +145,6 @@ export const projects = [{
     codeLink: "https://github.com/maticarrera12/FilmTrailers",
     technologies: ["ReactJS", "HTML", "CSS","TailwindCSS", "JavaScript"],
   },
-  {
-    title: "Awwward-winner",
-    image: ssawwwardwinner,
-    description:
-    "Clon de una pagina awwward-winner.",
-    projectLink: "https://awwwards-winner.vercel.app/",
-    codeLink: "https://github.com/maticarrera12/awwwards-winner",
-    technologies: ["ReactJS", "HTML", "CSS","TailwindCSS", "JavaScript"],
-  },
+
 ]
 

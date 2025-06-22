@@ -10,11 +10,11 @@ const ProjectCard = ({ title, image, description, projectLink, codeLink, technol
 
  return (
     <div className="w-full min-w-[300px] mx-auto bg-white rounded-lg shadow-lg hover:shadow-2xl transform transition-all duration-300 ease-in-out hover:scale-105 overflow-hidden p-6 mb-8 flex flex-col">
-      <div className="relative w-full h-96 mb-6">
+      <div className="relative w-full mb-10">
         <img
           src={image}
           alt={`Imagen del proyecto ${title}`}
-          className="w-full h-full object-contain rounded-lg opacity-90 hover:opacity-100 transition-opacity duration-300 ease-in-out"
+          className="object-fit rounded-lg opacity-90 hover:opacity-100 transition-opacity duration-300 ease-in-out"
         />
       </div>
 
@@ -23,8 +23,6 @@ const ProjectCard = ({ title, image, description, projectLink, codeLink, technol
           {title}
         </h3>
         <p className="text-sm text-black mt-4 flex-grow">{description}</p>
-        <p>Stack: </p>
-        {/* Tecnologías como íconos */}
         <div className="flex flex-wrap gap-1 mt-4 items-center">
           {technologies.map((techName) => {
             const techImage = getTechnologyImage(techName);
@@ -35,7 +33,7 @@ const ProjectCard = ({ title, image, description, projectLink, codeLink, technol
                     src={techImage}
                     alt={techName}
                     title={techName}
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-contain border rounded-full hover:-translate-y-3 transition-all duration-500"
                   />
                 )}
               </div>
