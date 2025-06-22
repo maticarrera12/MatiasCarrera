@@ -129,7 +129,7 @@ export const projects = [{
     title: "VelvetPour",
     image: ssvelvetpour,
     description:
-      "Velvet Pour es una landing page diseñada para un bar ficticio, pensada para transmitir una experiencia visual envolvente y moderna. Este proyecto destaca por el uso intensivo de animaciones fluidas y creativas implementadas con GSAP (GreenSock Animation Platform), que aportan dinamismo e interacción a cada sección del sitio. Este proyecto fue una exploración en motion design web, centrada en microinteracciones, transiciones suaves y scroll animations usando GSAP.",
+      "Velvet Pour es una landing page diseñada para un bar, pensada para transmitir una experiencia visual envolvente y moderna. Este proyecto destaca por el uso intensivo de animaciones fluidas y creativas implementadas con GSAP (GreenSock Animation Platform), que aportan dinamismo e interacción a cada sección del sitio. Este proyecto fue una exploración en motion design web, centrada en microinteracciones, transiciones suaves y scroll animations usando GSAP.",
     projectLink: "https://velvetpour.vercel.app",
     codeLink: "https://github.com/maticarrera12/mojito-landing",
     technologies: [ "GSAP", "ReactJS", "TailwindCSS", "JavaScript",],
