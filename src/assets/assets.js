@@ -18,6 +18,7 @@ import ssvelyo from "../assets/images/ssvelyo.png"
 import typescriptLogo from "../assets/images/typescript.png";
 import nextlogo from "../assets/images/next.png";
 import ssinquirai from "../assets/images/ssinquirai.png";
+import ssvelvetpour from "../assets/images/ssvelvetpour.png";
 
 export const technologies = [
   {
@@ -38,6 +39,11 @@ export const technologies = [
   {
     name: "JavaScript",
     image: jsLogo,
+    category: "front-end",
+  },
+  {
+    name:'GSAP',
+    image: "https://jsmastery.com/_next/image?url=https%3A%2F%2Fjavascript-mastery.s3.amazonaws.com%2Fassets%2Fcontent%2Fcourses%2F1746581370764%2Ficon%2FGSAP%2520Pro%253A%2520Animate%2520Like%2520a%2520Boss%2520%25F0%259F%259A%2580.png&w=128&q=75",
     category: "front-end",
   },
   {
@@ -98,7 +104,7 @@ export const projects = [{
   image: ssinquirai,
   description:
     "InquirAi es una aplicación web que permite a los usuarios realizar preguntas y recibir respuestas generadas por inteligencia artificial. Utiliza la API de OpenAI para procesar las preguntas y generar respuestas. La aplicación cuenta con un diseño responsivo, una interfaz de usuario intuitiva y un sistema de autenticación para usuarios registrados. Los usuarios pueden hacer preguntas, ver respuestas anteriores y gestionar su perfil.",
-  projectLink: "https://inquirai-dldx.vercel.app",
+  projectLink: "https://inquirai.vercel.app",
   codeLink: "https://github.com/maticarrera12/inquirai",
   technologies:["Next.js", "TailwindCSS","TypeScript", "JavaScript",  "MongoDB"],
 },
@@ -118,6 +124,15 @@ export const projects = [{
     projectLink: "https://med-reserva.vercel.app",
     codeLink: "https://github.com/maticarrera12/MedReserva",
     technologies: ["ReactJS", "Node.js", "MongoDB", "TailwindCSS", "HTML", "CSS", "JavaScript" ,"Express.js"],
+  },
+  {
+    title: "VelvetPour",
+    image: ssvelvetpour,
+    description:
+      "Velvet Pour es una landing page diseñada para un bar ficticio, pensada para transmitir una experiencia visual envolvente y moderna. Este proyecto destaca por el uso intensivo de animaciones fluidas y creativas implementadas con GSAP (GreenSock Animation Platform), que aportan dinamismo e interacción a cada sección del sitio. Este proyecto fue una exploración en motion design web, centrada en microinteracciones, transiciones suaves y scroll animations usando GSAP.",
+    projectLink: "https://velvetpour.vercel.app",
+    codeLink: "https://github.com/maticarrera12/mojito-landing",
+    technologies: [ "GSAP", "ReactJS", "TailwindCSS", "JavaScript",],
   },
   {
     title: "QueTeDebo?",

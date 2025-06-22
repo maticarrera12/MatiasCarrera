@@ -46,7 +46,7 @@ const ProjectCard = ({ title, image, description, projectLink, codeLink, technol
             href={projectLink || "#"}
             target="_blank"
             rel="noopener noreferrer"
-            className={`flex items-center text-sm font-medium transition duration-200 ${
+            className={`flex items-center text-sm font-semibold transition duration-200 ${
               projectLink
                 ? "text-blue-600 hover:text-blue-500"
                 : "text-gray-400 cursor-not-allowed pointer-events-none"
@@ -60,7 +60,7 @@ const ProjectCard = ({ title, image, description, projectLink, codeLink, technol
             href={codeLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center text-sm font-medium text-flame hover:text-orange-500 transition duration-200"
+            className="flex items-center text-sm font-semibold text-flame hover:text-orange-500 transition duration-200"
           >
             <FaGithub className="mr-2" size={18} />
             Ver Código

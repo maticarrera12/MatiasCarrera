@@ -11,7 +11,7 @@ const BentoCard = ({ image, title }) => {
         <img
           src={image}
           alt={title}
-          className="w-auto h-full object-contain rounded-t-lg transform scale-125 transition-transform duration-300 hover:scale-90"
+          className="w-auto h-full object-contain rounded-t-lg transform  transition-transform duration-300 hover:scale-90"
         />
       </div>
 
