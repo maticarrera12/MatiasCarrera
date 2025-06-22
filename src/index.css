@@ -78,4 +78,6 @@ html, body {
   }
 }
 
-
+html:has(:target) {
+  scroll-behavior: auto !important;
+}

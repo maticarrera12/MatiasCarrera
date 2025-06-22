@@ -4,13 +4,20 @@ import { projects, technologies } from "../assets/assets";
 import { technologies as allTechnologies } from "../assets/assets";
 import PaginationComponent from "./PaginationComponent";
 
-const ProjectCard = ({ title, image, description, projectLink, codeLink, technologies }) => {
+const ProjectCard = ({
+  title,
+  image,
+  description,
+  projectLink,
+  codeLink,
+  technologies,
+}) => {
   const getTechnologyImage = (techName) => {
     const tech = allTechnologies.find((t) => t.name === techName);
     return tech ? tech.image : null;
   };
 
- return (
+  return (
     <div className="w-full min-w-[300px] mx-auto bg-white rounded-lg shadow-lg hover:shadow-2xl transform transition-all duration-300 ease-in-out hover:scale-105 overflow-hidden p-6 mb-8 flex flex-col">
       <div className="relative w-full mb-10">
         <img
@@ -74,12 +81,11 @@ const ProjectCard = ({ title, image, description, projectLink, codeLink, technol
 };
 
 const Projects = () => {
-  const topRef = useRef(null);
+  const topRef = useRef();
   const [selectedTech, setSelectedTech] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
-
-
+  const hasInteracted = useRef(false); // 👈 para controlar interacciones del usuario
 
   // Filtrar por tecnología
   const filteredProjects = selectedTech
@@ -91,20 +97,30 @@ const Projects = () => {
   const endIndex = startIndex + itemsPerPage;
   const currentProjects = filteredProjects.slice(startIndex, endIndex);
 
-  // Reiniciar a la página 1 cuando cambia la tecnología
+  // Scroll al cambiar de tecnología o de página (solo tras interacción)
+  useEffect(() => {
+    if (hasInteracted.current) {
+      topRef.current?.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [currentPage, selectedTech]);
+
   const handleTechChange = (techName) => {
-    setCurrentPage(1); // reset page
+    hasInteracted.current = true;
+    setCurrentPage(1);
     setSelectedTech((prev) => (prev === techName ? null : techName));
   };
 
-  useEffect(() => {
-  if (topRef.current) {
-    topRef.current.scrollIntoView({ behavior: "smooth" });
-  }
-}, [currentPage, selectedTech]);
+  const handlePageChange = (page) => {
+    hasInteracted.current = true;
+    setCurrentPage(page);
+  };
 
   return (
-    <div className="min-h-screen bg-white py-10 px-4 sm:p-8 md:p-12" id="proyectos" ref={topRef}>
+    <div
+      className="min-h-screen bg-white py-10 px-4 sm:p-8 md:p-12"
+      id="proyectos"
+      ref={topRef}
+    >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl sm:text-4xl text-center font-semibold text-black mb-8 sm:mb-12">
           Mis Proyectos
@@ -116,7 +132,9 @@ const Projects = () => {
             <button
               key={index}
               className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium ${
-                selectedTech === tech.name ? "bg-flame text-white" : "bg-black text-white"
+                selectedTech === tech.name
+                  ? "bg-flame text-white"
+                  : "bg-black text-white"
               } hover:bg-flame hover:text-soft-white transition duration-300 ease-in-out`}
               onClick={() => handleTechChange(tech.name)}
             >
@@ -134,7 +152,8 @@ const Projects = () => {
             ))
           ) : (
             <p className="text-black text-center col-span-full">
-              Todavía no hay proyectos que utilicen la tecnología seleccionada, pero los habrá 😉.
+              Todavía no hay proyectos que utilicen la tecnología seleccionada,
+              pero los habrá 😉.
             </p>
           )}
         </div>
@@ -145,7 +164,7 @@ const Projects = () => {
             totalItems={filteredProjects.length}
             itemsPerPage={itemsPerPage}
             currentPage={currentPage}
-            onPageChange={setCurrentPage}
+            onPageChange={handlePageChange}
           />
         )}
       </div>
