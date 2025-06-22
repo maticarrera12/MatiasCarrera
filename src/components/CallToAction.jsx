@@ -23,7 +23,18 @@ const CallToAction = () => {
       stagger: 0.08,
       opacity: 0,
     });
-  });
+      scrollTimeline.from(
+    ".link-button",
+    {
+      opacity: 0,
+      y: 30,
+      duration: 0.8,
+      ease: "power3.out",
+      stagger: 0.2,
+    }
+  );
+});
+
 
   return (
     <div
@@ -46,7 +57,7 @@ const CallToAction = () => {
             href="https://www.linkedin.com/in/matias-carrera"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 rounded-lg bg-transparent text-white font-bold shadow hover:bg-white hover:text-flame border-2 border-white transition-colors duration-200 link"
+            className="px-6 py-3 rounded-lg bg-transparent text-white font-bold shadow hover:bg-white hover:text-flame border-2 border-white transition-colors duration-200 link-button"
           >
             Linkedin
           </a>
@@ -54,7 +65,7 @@ const CallToAction = () => {
             href="https://mail.google.com/mail/?view=cm&to=mcarreradev12@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 rounded-lg bg-transparent text-white font-bold shadow hover:bg-white hover:text-flame border-2 border-white transition-colors duration-200"
+            className="px-6 py-3 rounded-lg bg-transparent text-white font-bold shadow hover:bg-white hover:text-flame border-2 border-white transition-colors duration-200 link-button"
           >
             Gmail
           </a>

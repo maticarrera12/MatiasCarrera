@@ -11,7 +11,6 @@ const PaginationComponent = ({ totalItems, itemsPerPage, currentPage, onPageChan
         page={currentPage}
         onChange={(event, value) => onPageChange(value)}
         variant="outlined"
-        shape="rounded"
         sx={{
           "& .MuiPaginationItem-root": {
             color: "#FF3500",
