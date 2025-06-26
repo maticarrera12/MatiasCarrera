@@ -9,16 +9,17 @@ import mysqlLogo from "../assets/images/mysql.png";
 import pythonLogo from "../assets/images/python.png";
 import springbootLogo from "../assets/images/springboot.png";
 import tailwindLogo from "../assets/images/tailwind.png";
+import expressjsLogo from "../assets/images/expressjs.png"
+import typescriptLogo from "../assets/images/typescript.png";
+import nextlogo from "../assets/images/next.png";
 import ssfilmtrailers from "../assets/images/ssfilmtrailers.png";
 import ssmedreserva from "../assets/images/ssmedreserva.png";
-import expressjsLogo from "../assets/images/expressjs.png"
 import ssawwwardwinner from "../assets/images/ssawwwardwinner.png"
 import ssquetedebo from "../assets/images/quetedebo.png"
 import ssvelyo from "../assets/images/ssvelyo.png"
-import typescriptLogo from "../assets/images/typescript.png";
-import nextlogo from "../assets/images/next.png";
 import ssinquirai from "../assets/images/ssinquirai.png";
 import ssvelvetpour from "../assets/images/ssvelvetpour.png";
+import ssgtavi from "../assets/images/ssgtavi.png";
 
 export const technologies = [
   {
@@ -132,6 +133,15 @@ export const projects = [{
       "Velvet Pour es una landing page diseñada para un bar, pensada para transmitir una experiencia visual envolvente y moderna. Este proyecto destaca por el uso intensivo de animaciones fluidas y creativas implementadas con GSAP (GreenSock Animation Platform), que aportan dinamismo e interacción a cada sección del sitio. Este proyecto fue una exploración en motion design web, centrada en microinteracciones, transiciones suaves y scroll animations usando GSAP.",
     projectLink: "https://velvetpour.vercel.app",
     codeLink: "https://github.com/maticarrera12/mojito-landing",
+    technologies: [ "GSAP", "ReactJS", "TailwindCSS", "JavaScript",],
+  },
+  {
+    title: "GTAVI",
+    image: ssgtavi,
+    description:
+      "Desarrollé la landing page inspirada en Grand Theft Auto VI como proyecto personal para explorar animaciones web avanzadas utilizando GSAP (GreenSock Animation Platform). La página cuenta con transiciones suaves, efectos de entrada y salida, scroll animations, efectos de máscara y secuencias sincronizadas que mejoran la experiencia visual. Implementé scroll-based animations, timeline control, interacciones dinámicas y una arquitectura responsive moderna con Tailwind CSS. Este proyecto me permitió reforzar mis habilidades en JavaScript, GSAP, UX/UI y animación web avanzada.",
+    projectLink: "https://gta-vi-landing-eight.vercel.app",
+    codeLink: "https://github.com/maticarrera12/gta_vi_landing",
     technologies: [ "GSAP", "ReactJS", "TailwindCSS", "JavaScript",],
   },
   {
