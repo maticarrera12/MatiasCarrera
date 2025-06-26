@@ -3,6 +3,8 @@ import { useEffect, useRef, useState } from "react";
 import { projects, technologies } from "../assets/assets";
 import { technologies as allTechnologies } from "../assets/assets";
 import PaginationComponent from "./PaginationComponent";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const ProjectCard = ({
   title,
@@ -18,7 +20,7 @@ const ProjectCard = ({
   };
 
   return (
-    <div className="w-full min-w-[300px] mx-auto bg-white rounded-lg shadow-lg hover:shadow-2xl transform transition-all duration-300 ease-in-out hover:scale-105 overflow-hidden p-6 mb-8 flex flex-col">
+    <div className="w-full min-w-[300px] mx-auto bg-white rounded-lg shadow-lg hover:shadow-2xl transform transition-all duration-300 ease-in-out hover:scale-105 overflow-hidden p-6 mb-8 flex flex-col project-card">
       <div className="relative w-full mb-10">
         <img
           src={image}
@@ -85,19 +87,16 @@ const Projects = () => {
   const [selectedTech, setSelectedTech] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
-  const hasInteracted = useRef(false); // 👈 para controlar interacciones del usuario
+  const hasInteracted = useRef(false); 
 
-  // Filtrar por tecnología
   const filteredProjects = selectedTech
     ? projects.filter((project) => project.technologies.includes(selectedTech))
     : projects;
 
-  // Paginación: obtener los proyectos de la página actual
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   const currentProjects = filteredProjects.slice(startIndex, endIndex);
 
-  // Scroll al cambiar de tecnología o de página (solo tras interacción)
   useEffect(() => {
     if (hasInteracted.current) {
       topRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -116,14 +115,14 @@ const Projects = () => {
   };
 
   return (
-    <div
+    <section
       className="min-h-screen bg-white py-10 px-4 sm:p-8 md:p-12"
       id="proyectos"
       ref={topRef}
     >
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl text-center font-semibold text-black mb-8 sm:mb-12">
-          Mis Proyectos
+        <h2 className="text-8xl text-center font-semibold text-black mb-8 sm:mb-12">
+          Proyectos
         </h2>
 
         {/* Botones de tecnología */}
@@ -134,7 +133,7 @@ const Projects = () => {
               className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium ${
                 selectedTech === tech.name
                   ? "bg-flame text-white"
-                  : "bg-black text-white"
+                  : "bg-transparent text-flame border border-flame"
               } hover:bg-flame hover:text-soft-white transition duration-300 ease-in-out`}
               onClick={() => handleTechChange(tech.name)}
             >
@@ -168,7 +167,7 @@ const Projects = () => {
           />
         )}
       </div>
-    </div>
+    </section>
   );
 };
 
