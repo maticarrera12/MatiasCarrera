@@ -12,6 +12,7 @@ import tailwindLogo from "../assets/images/tailwind.png";
 import expressjsLogo from "../assets/images/expressjs.png"
 import typescriptLogo from "../assets/images/typescript.png";
 import nextlogo from "../assets/images/next.png";
+import supabaseLogo from '../assets/images/supabase.png'
 import ssfilmtrailers from "../assets/images/ssfilmtrailers.png";
 import ssmedreserva from "../assets/images/ssmedreserva.png";
 import ssawwwardwinner from "../assets/images/ssawwwardwinner.png"
@@ -20,6 +21,7 @@ import ssvelyo from "../assets/images/ssvelyo.png"
 import ssinquirai from "../assets/images/ssinquirai.png";
 import ssvelvetpour from "../assets/images/ssvelvetpour.png";
 import ssgtavi from "../assets/images/ssgtavi.png";
+import ssconverso from "../assets/images/ssconverso.png";
 
 export const technologies = [
   {
@@ -88,15 +90,21 @@ export const technologies = [
     category: "back-end",
   },
   {
-    name: "Python",
-    image: pythonLogo,
-    category: "back-end",
-  },
-  {
     name: "Express.js",
     image: expressjsLogo,
     category: "back-end",
   },
+  {
+    name: "Supabase",
+    image: supabaseLogo,
+    category: "back-end",
+  },
+  {
+    name: "Python",
+    image: pythonLogo,
+    category: "back-end",
+  },
+
 
 ];
 
@@ -125,6 +133,15 @@ export const projects = [{
     projectLink: "https://med-reserva.vercel.app",
     codeLink: "https://github.com/maticarrera12/MedReserva",
     technologies: ["ReactJS", "Node.js", "MongoDB", "TailwindCSS", "HTML", "CSS", "JavaScript" ,"Express.js"],
+  },
+  {
+    title: "Converso",
+    image: ssconverso,
+    description:
+      "Converso es una plataforma SaaS desarrollada con Next.js que permite generar clases interactivas por videollamada impulsadas por inteligencia artificial. Integra autenticación y gestión de billing con Clerk, base de datos y backend con Supabase, UI con ShadCN, y monitoreo de errores con Sentry. Ideal para explorar la combinación de IA y educación en tiempo real.",
+    projectLink: "https://converso-web.vercel.app",
+    codeLink: "https://github.com/maticarrera12/converso",
+    technologies: ["Next.js", "Supabase","ReactJS", "TailwindCSS","JavaScript"],
   },
   {
     title: "VelvetPour",

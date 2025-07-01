@@ -137,7 +137,7 @@ const Projects = () => {
               } hover:bg-flame hover:text-soft-white transition duration-300 ease-in-out`}
               onClick={() => handleTechChange(tech.name)}
             >
-              <img src={tech.image} alt={tech.name} className="w-6 h-6" />
+              <img src={tech.image} alt={tech.name} className="w-7 h-7 rounded-full" />
               {tech.name}
             </button>
           ))}
