@@ -35,11 +35,6 @@ export const technologies = [
     category: "front-end",
   },
   {
-    name: "TailwindCSS",
-    image: tailwindLogo,
-    category: "front-end",
-  },
-  {
     name: "JavaScript",
     image: jsLogo,
     category: "front-end",
@@ -55,21 +50,32 @@ export const technologies = [
     category: "front-end",
   },
   {
-    name: "HTML",
-    image: htmlLogo,
-    category: "front-end",
-  },
-  {
-    name: "CSS",
-    image: cssLogo,
-    category: "front-end",
-  },
-  {
     name: "Node.js",
     image: nodeLogo,
     category: "back-end",
   },
+
   {
+    name: "SpringBoot",
+    image: springbootLogo,
+    category: "back-end",
+  },
+  {
+    name: "Java",
+    image: javaLogo,
+    category: "back-end",
+  },
+  {
+    name: "Express.js",
+    image: expressjsLogo,
+    category: "back-end",
+  },
+    {
+    name: "TailwindCSS",
+    image: tailwindLogo,
+    category: "front-end",
+  },
+    {
     name: "MYSQL",
     image: mysqlLogo,
     category: "back-end",
@@ -80,36 +86,32 @@ export const technologies = [
     category: "back-end",
   },
   {
-    name: "Java",
-    image: javaLogo,
-    category: "back-end",
-  },
-  {
-    name: "SpringBoot",
-    image: springbootLogo,
-    category: "back-end",
-  },
-  {
-    name: "Express.js",
-    image: expressjsLogo,
-    category: "back-end",
-  },
-  {
     name: "Supabase",
     image: supabaseLogo,
     category: "back-end",
+  }
+  ,
+  {
+    name: "HTML",
+    image: htmlLogo,
+    category: "front-end",
   },
   {
-    name: "Python",
-    image: pythonLogo,
-    category: "back-end",
+    name: "CSS",
+    image: cssLogo,
+    category: "front-end",
   },
+  // {
+  //   name: "Python",
+  //   image: pythonLogo,
+  //   category: "back-end",
+  // },
 
 
 ];
 
 export const projects = [{
-  title: "InquirAi",
+  title: "InquirAI",
   image: ssinquirai,
   description:
     "InquirAi es una aplicación web que permite a los usuarios realizar preguntas y recibir respuestas generadas por inteligencia artificial. Utiliza la API de OpenAI para procesar las preguntas y generar respuestas. La aplicación cuenta con un diseño responsivo, una interfaz de usuario intuitiva y un sistema de autenticación para usuarios registrados. Los usuarios pueden hacer preguntas, ver respuestas anteriores y gestionar su perfil.",

@@ -86,7 +86,7 @@ const Projects = () => {
   const topRef = useRef();
   const [selectedTech, setSelectedTech] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 6;
+  const itemsPerPage = 8;
   const hasInteracted = useRef(false); 
 
   const filteredProjects = selectedTech
