@@ -25,10 +25,10 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative h-screen w-screen overflow-x-hidden" id="inicio">
+    <div className="relative min-h-dvh w-screen overflow-x-hidden" id="inicio">
       <div
         id="hero-frame"
-        className="relative z-10 w-screen h-screen overflow-hidden rounded-lg bg-flame flex"
+        className="relative z-10 w-screen min-h-dvh overflow-hidden rounded-lg bg-flame flex"
       >
         {/* Contenido a la izquierda */}
         <div className="flex flex-1 gap-5 lg:justify-around flex-col mt-24 px-5 sm:px-10 z-20">
@@ -69,7 +69,7 @@ const Hero = () => {
         </div>
 
         {/* Imagen a la derecha */}
-        <div className="flex-1 flex justify-center items-center relative h-full">
+        <div className="flex-1 flex justify-center items-center relative min-h-dvh">
           <img
             src={portfolioIllustration}
             alt="portfolio illustration"
