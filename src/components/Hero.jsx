@@ -19,16 +19,16 @@ const Hero = () => {
         trigger: "#hero-frame",
         start: "center center",
         end: "bottom center",
-        scrub: true,
+        scrub: 1, // Cambiar de true a 1 para mejor rendimiento
       },
     });
   }, []);
 
   return (
-    <div className="relative min-h-dvh w-screen overflow-x-hidden" id="inicio">
+    <div className="relative h-screen w-screen overflow-x-hidden" id="inicio">
       <div
         id="hero-frame"
-        className="relative z-10 w-screen overflow-hidden rounded-lg bg-flame flex "
+        className="relative z-10 w-screen h-screen overflow-hidden rounded-lg bg-flame flex"
       >
         {/* Contenido a la izquierda */}
         <div className="flex flex-1 gap-5 lg:justify-around flex-col mt-24 px-5 sm:px-10 z-20">
@@ -69,7 +69,7 @@ const Hero = () => {
         </div>
 
         {/* Imagen a la derecha */}
-        <div className="flex-1 flex justify-center items-center relative h-full min-h-dvh">
+        <div className="flex-1 flex justify-center items-center relative h-full">
           <img
             src={portfolioIllustration}
             alt="portfolio illustration"
