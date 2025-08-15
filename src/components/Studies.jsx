@@ -5,6 +5,7 @@ import AnimatedTitle from "./AnimatedTitle";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { useScrollTriggerRefresh } from "../hooks/useScrollTriggerRefresh";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,6 +14,10 @@ const Studies = () => {
   const textRefsCourses = useRef([]);
   const progressRefStudies = useRef(null);
   const progressRefCourses = useRef(null);
+  const scrollTriggersRef = useRef([]);
+
+  // Usar el hook personalizado para refrescar ScrollTriggers
+  useScrollTriggerRefresh([]);
 
   const slides = [
     "https://res.cloudinary.com/ddhkdbavs/image/upload/v1747082741/Professional_Developer_-_Matias_Carrera_te2rzs.jpg",
@@ -57,14 +62,16 @@ const Studies = () => {
   useEffect(() => {
     const animateTexts = (texts) => {
       texts.forEach((text) => {
-        gsap.to(text, {
+        const trigger = gsap.to(text, {
           color: "#FF3500",
           scrollTrigger: {
             trigger: text,
             start: "top center",
             toggleActions: "play none none reverse",
+            refreshPriority: 1,
           },
         });
+        scrollTriggersRef.current.push(trigger.scrollTrigger);
       });
     };
 
@@ -73,7 +80,7 @@ const Studies = () => {
 
     // Configuración mejorada para la animación de progreso
     const setupProgressAnimation = (progressRef, triggerElement) => {
-      gsap.fromTo(progressRef.current,
+      const trigger = gsap.fromTo(progressRef.current,
         { height: "0%" },
         {
           height: "100%",
@@ -83,10 +90,12 @@ const Studies = () => {
             start: "top center", 
             end: "bottom center", 
             scrub: 1, 
-            markers: false, 
+            markers: false,
+            refreshPriority: 1,
           }
         }
       );
+      scrollTriggersRef.current.push(trigger.scrollTrigger);
     };
 
     setupProgressAnimation(progressRefStudies, sectionStudies);
@@ -97,7 +106,8 @@ const Studies = () => {
 
     // Limpieza
     return () => {
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+      scrollTriggersRef.current.forEach(trigger => trigger?.kill());
+      scrollTriggersRef.current = [];
     };
   }, []);
 

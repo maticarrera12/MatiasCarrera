@@ -1,8 +1,12 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import SplitText from "gsap/SplitText";
+import { useScrollTriggerRefresh } from "../hooks/useScrollTriggerRefresh";
 
 const CallToAction = () => {
+  // Usar el hook personalizado para refrescar ScrollTriggers
+  useScrollTriggerRefresh([]);
+
   useGSAP(() => {
     const textSplit = SplitText.create("#callToAction h2, #callToAction p", {
       type: "words",
@@ -14,8 +18,10 @@ const CallToAction = () => {
         start: "top 70%",
         end: "bottom center",
         scrub: true,
+        refreshPriority: 1, // Prioridad alta para refrescar
       },
     });
+
     scrollTimeline.from(textSplit.words, {
       yPercent: 100,
       duration: 1,
@@ -23,17 +29,26 @@ const CallToAction = () => {
       stagger: 0.08,
       opacity: 0,
     });
-      scrollTimeline.from(
-    ".link-button",
-    {
-      opacity: 0,
-      y: 30,
-      duration: 0.8,
-      ease: "power3.out",
-      stagger: 0.2,
-    }
-  );
-});
+
+    scrollTimeline.from(
+      ".link-button",
+      {
+        opacity: 0,
+        y: 30,
+        duration: 0.8,
+        ease: "power3.out",
+        stagger: 0.2,
+      }
+    );
+
+    // Cleanup function
+    return () => {
+      scrollTimeline.kill();
+    };
+  }, {
+    dependencies: [], // Sin dependencias para que se ejecute solo una vez
+    revertOnUpdate: false, // No revertir en updates
+  });
 
 
   return (

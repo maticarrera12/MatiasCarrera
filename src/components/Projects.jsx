@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { projects, technologies } from "../assets/assets";
 import { technologies as allTechnologies } from "../assets/assets";
 import PaginationComponent from "./PaginationComponent";
+import { useScrollTriggerRefresh } from "../hooks/useScrollTriggerRefresh";
 
 
 const ProjectCard = ({
@@ -95,6 +96,9 @@ const Projects = () => {
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   const currentProjects = filteredProjects.slice(startIndex, endIndex);
+
+  // Usar el hook personalizado para refrescar ScrollTriggers
+  useScrollTriggerRefresh([selectedTech, currentPage]);
 
   useEffect(() => {
     if (hasInteracted.current) {

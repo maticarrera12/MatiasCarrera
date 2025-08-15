@@ -11,13 +11,13 @@ const BentoCard = ({ image, title }) => {
         <img
           src={image}
           alt={title}
-          className="w-auto h-full object-contain rounded-t-lg transform  transition-transform duration-300 hover:scale-90"
+          className="w-auto h-full object-contain rounded-t-lg transform transition-transform duration-300 hover:scale-90"
         />
       </div>
 
       {/* Contenedor del texto */}
       <div className="relative z-10 flex flex-col justify-center items-center py-3 bg-opacity-50 rounded-b-lg">
-        <h1 className="text-xs  font-medium text-center text-blue-50">
+        <h1 className="text-xs font-medium text-center text-blue-50">
           {title}
         </h1>
       </div>
@@ -30,12 +30,19 @@ const Tecnologies = () => {
     return technologies
       .filter((tech) => tech.category === category)
       .map((tech, index) => (
-        <BentoTilt
-          key={index}
-          className="bento-tilt relative w-40 h-64 overflow-hidden rounded-lg md:w-48 md:h-72"
-        >
-          <BentoCard image={tech.image} title={tech.name} />
-        </BentoTilt>
+        <div key={index} className="relative w-40 h-64 overflow-hidden rounded-lg md:w-48 md:h-72">
+          {/* En pantallas grandes (lg+) usar BentoTilt, en pantallas pequeñas solo la card */}
+          <div className="hidden lg:block">
+            <BentoTilt className="bento-tilt relative w-full h-full">
+              <BentoCard image={tech.image} title={tech.name} />
+            </BentoTilt>
+          </div>
+          
+          {/* En pantallas pequeñas (md y menores) mostrar solo la card sin efectos */}
+          <div className="lg:hidden">
+            <BentoCard image={tech.image} title={tech.name} />
+          </div>
+        </div>
       ));
   };
 

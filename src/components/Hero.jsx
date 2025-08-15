@@ -50,14 +50,20 @@ const Hero = () => {
             en el usuario.
           </p>
 
-          <a href="#contacto" className="cursor-pointer">
-            <button className="group  mb-10 relative overflow-hidden w-fit rounded-full px-7 py-3 bg-black text-white flex-center gap-1">
-              <TiLocationArrow />
-              <span className="relative z-50 inline-flex overflow-hidden text-xs uppercase">
-                Contactame
-              </span>
-            </button>
-          </a>
+          <button 
+            onClick={() => {
+              document.getElementById('contacto')?.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }}
+            className="group mb-10 relative overflow-hidden w-fit rounded-full px-7 py-3 bg-black text-white flex items-center justify-center gap-1 hover:bg-gray-950 transition-all duration-300 cursor-pointer transform hover:scale-105 hover:shadow-lg active:scale-95"
+          >
+            <TiLocationArrow className="transition-transform duration-300" />
+            <span className="relative z-50 inline-flex overflow-hidden text-xs uppercase font-medium">
+              Contactame
+            </span>
+          </button>
           </div>
          
         </div>
@@ -69,17 +75,13 @@ const Hero = () => {
             alt="portfolio illustration"
             className="hidden lg:block min-w-[300px] max-w-[600px] mr-8 w-full h-auto object-contain z-30"
           />
-
-          {/* UXUI blanco dentro del hero-frame, sobre la imagen */}
         </div>
+        
         <h2 className="font-otbrut hero-heading absolute bottom-5 right-5 z-40 text-soft-white">
           UX/UI
         </h2>
-
-        <div className="absolute left-0 top-0 z-40 size-full">
-          <div className="mt-24 px-5 sm:px-10"></div>
-        </div>
       </div>
+      
       <h2 className="font-otbrut hero-heading absolute bottom-5 right-5 bg-black text-transparent bg-clip-text">
         UX/UI
       </h2>
