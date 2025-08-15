@@ -3,8 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { projects, technologies } from "../assets/assets";
 import { technologies as allTechnologies } from "../assets/assets";
 import PaginationComponent from "./PaginationComponent";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
+
 
 const ProjectCard = ({
   title,
@@ -121,7 +120,7 @@ const Projects = () => {
       ref={topRef}
     >
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-8xl text-center font-semibold text-black mb-8 sm:mb-12">
+        <h2 className="text-4xl text-center font-semibold text-black mb-8 sm:mb-12">
           Proyectos
         </h2>
 

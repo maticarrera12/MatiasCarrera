@@ -41,7 +41,7 @@ const Hero = () => {
             <h2 className="font-otbrut hero-heading text-black">SPRINGBOOT</h2>
           </div>
           <div>
-             <p className="mb-5 max-w-96 text-xs sm:text-lg text-soft-white">
+             <p className="mb-5 max-w-96 text-md sm:text-lg text-soft-white">
             Hola, soy Matías Carrera, estudiante de Ingeniería en Inteligencia
             Artificial en la Universidad de Palermo, con 3 años de formación en
             Diseño Gráfico y Multimedia en la UADE. Apasionado por la
