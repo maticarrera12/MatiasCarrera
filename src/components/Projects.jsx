@@ -5,7 +5,6 @@ import { technologies as allTechnologies } from "../assets/assets";
 import PaginationComponent from "./PaginationComponent";
 import { useScrollTriggerRefresh } from "../hooks/useScrollTriggerRefresh";
 
-
 const ProjectCard = ({
   title,
   image,
@@ -87,7 +86,7 @@ const Projects = () => {
   const [selectedTech, setSelectedTech] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 8;
-  const hasInteracted = useRef(false); 
+  const hasInteracted = useRef(false);
 
   const filteredProjects = selectedTech
     ? projects.filter((project) => project.technologies.includes(selectedTech))
@@ -102,6 +101,7 @@ const Projects = () => {
 
   useEffect(() => {
     if (hasInteracted.current) {
+      // Siempre ir al inicio de proyectos cuando cambie algo
       topRef.current?.scrollIntoView({ behavior: "smooth" });
     }
   }, [currentPage, selectedTech]);
@@ -133,14 +133,18 @@ const Projects = () => {
           {technologies.map((tech, index) => (
             <button
               key={index}
-              className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium ${
+              className={`flex items-center gap-2 px-4 py-2 rounded-lg font-bold ${
                 selectedTech === tech.name
                   ? "bg-flame text-white"
                   : "bg-transparent text-flame border border-flame"
               } hover:bg-flame hover:text-soft-white transition duration-300 ease-in-out`}
               onClick={() => handleTechChange(tech.name)}
             >
-              <img src={tech.image} alt={tech.name} className="w-7 h-7 rounded-full" />
+              <img
+                src={tech.image}
+                alt={tech.name}
+                className="w-7 h-7 rounded-full"
+              />
               {tech.name}
             </button>
           ))}
